@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aside Menu - 50 Famous Websites</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <style>
+        /* --- General Styles --- */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: rgb(0, 0, 0);
+        }
+
+        body::-webkit-scrollbar
+        {
+        width: 8px;
+        height: 6px;
+        }
+        body::-webkit-scrollbar-thumb
+        {
+            background: rgb(107, 105, 105);
+        }
+
+        body::-webkit-scrollbar-track 
+        {
+            background-color: rgb(0, 0, 0);
+        }
+
+
+        /* --- Aside Menu --- */
+        aside {
+            font-weight: bold;
+            font-size: large;
+            background-color: #000000;
+            padding: 20px;
+            border-radius: 15px;
+            outline: 2px solid rgb(223, 21, 21);
+            max-width: 400px;
+            margin: auto;
+        }
+
+        aside ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        aside ul li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+
+        aside ul li i {
+            margin-right: 10px;
+            color: aliceblue;
+            min-width: 25px;
+            text-align: center;
+        }
+
+        a {
+            color: yellow;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgb(143, 143, 41);
+            font-size: x-large;
+            text-decoration: underline;
+        }
+
+        /* --- Responsive Aside --- */
+        @media screen and (max-width: 700px) {
+            aside {
+                font-size: medium;
+                padding: 15px;
+            }
+
+            a:hover {
+                font-size: large;
+            }
+        }
+
+        /* Icon Colors */
+        /* Icon Colors */
+        .fa-youtube {
+            color: red;
+        }
+
+        .fa-facebook {
+            color: #1877F2;
+        }
+
+        /* Facebook Blue */
+        .fa-twitter {
+            color: #1DA1F2;
+        }
+
+        /* Twitter Blue */
+        .fa-instagram {
+            color: #E1306C;
+        }
+
+        /* Instagram Pink/Gradient */
+        .fa-linkedin {
+            color: #0077B5;
+        }
+
+        /* LinkedIn Blue */
+        .fa-github {
+            color: #585757;
+        }
+
+        /* GitHub Dark Gray */
+        .fa-reddit {
+            color: #FF4500;
+        }
+
+        /* Reddit Orange */
+        .fa-pinterest {
+            color: #E60023;
+        }
+
+        /* Pinterest Red */
+        .fa-tiktok {
+            color: black;
+        }
+
+        /* TikTok Black */
+        .fa-school {
+            color: green;
+        }
+
+        /* Example color for school */
+        .fa-spotify {
+            color: #1DB954;
+        }
+
+        /* Spotify Green */
+        .fa-apple {
+            color: rgb(128, 121, 121);
+        }
+
+        /* Apple Black */
+        .fa-amazon {
+            color: #FF9900;
+        }
+
+        /* Amazon Orange */
+        .fa-google {
+            color: #4285F4;
+        }
+
+        /* Google Blue */
+        .fa-twitch {
+            color: #9146FF;
+        }
+
+        /* Twitch Purple */
+        .fa-telegram {
+            color: #0088cc;
+        }
+
+        /* Telegram Blue */
+        .fa-whatsapp {
+            color: #25D366;
+        }
+
+        /* WhatsApp Green */
+        .fa-etsy {
+            color: #F16521;
+        }
+
+        /* Etsy Orange */
+        .fa-adobe {
+            color: #FF0000 !important;
+        }
+
+        /* Adobe Red */
+        .fa-drop {
+            color: #0061FF;
+        }
+
+        /* Drop Blue */
+        .fa-medium {
+            color: #00ab6c;
+        }
+
+        /* Medium Green */
+        .fa-wordpress {
+            color: #21759B;
+        }
+
+        /* WordPress Blue */
+        .fa-slack {
+            color: #4A154B;
+        }
+
+        /* Slack Purple */
+        .fa-salesforce {
+            color: #1798c1;
+        }
+
+        /* Salesforce Blue */
+        .fa-skype {
+            color: #00AFF0;
+        }
+
+        /* Skype Blue */
+        .fa-discord {
+            color: #7289DA;
+        }
+
+        /* Discord Blue */
+        .fa-netflix {
+            color: #E50914;
+        }
+
+        /* Netflix Red */
+        .fa-hulu {
+            color: #1CE783;
+        }
+
+        /* Hulu Green */
+        .fa-quora {
+            color: #B92B27;
+        }
+
+        /* Quora Red */
+        .fa-stack-exchange {
+            color: #1E539C;
+        }
+
+        /* Stack Exchange Blue */
+        .fa-yahoo {
+            color: #6001D2;
+        }
+
+        /* Yahoo Purple */
+        .fa-bing {
+            color: #008373;
+        }
+
+        /* Bing Teal */
+        .fa-android {
+            color: #3DDC84;
+        }
+
+        /* Android Green */
+        .fa-wikipedia-w {
+            color: #000;
+        }
+
+        /* Wikipedia Black */
+        .fa-trello {
+            color: #0079BF;
+        }
+
+        /* Trello Blue */
+        .fa-indeed {
+            color: #2164F3;
+        }
+
+        /* Indeed Blue */
+        .fa-codepen {
+            color: #000000;
+        }
+
+        /* CodePen Black */
+        .fa-shopify {
+            color: #96BF48;
+        }
+
+        /* Shopify Green */
+        .fa-behance {
+            color: #1769FF;
+        }
+
+        /* Behance Blue */
+        .fa-vimeo {
+            color: #1AB7EA;
+        }
+
+        /* Vimeo Blue */
+        .fa-patreon {
+            color: #F96854;
+        }
+
+        /* Patreon Orange */
+    </style>
+</head>
+
+<body>
+
+    <!----------------ASIDE MENU 45-------------------->
+    <aside>
+        <ul>
+            <!-- 50 Famous Websites -->
+             <li><i class="fa-brands fa-youtube"></i><a href="https://www.youtube.com" target="_blank">YouTube</a></li>
+
+<li><i class="fa-brands fa-facebook"></i><a href="https://www.facebook.com" target="_blank">Facebook</a></li>
+
+<li><i class="fa-brands fa-twitter"></i><a href="https://www.twitter.com" target="_blank">Twitter</a></li>
+
+<li><i class="fa-brands fa-instagram"></i><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+
+<li><i class="fa-brands fa-linkedin"></i><a href="https://www.linkedin.com" target="_blank">LinkedIn</a></li>
+
+<li><i class="fa-brands fa-github"></i><a href="https://www.github.com" target="_blank">GitHub</a></li>
+
+<li><i class="fa-brands fa-reddit"></i><a href="https://www.reddit.com" target="_blank">Reddit</a></li>
+
+<li><i class="fa-brands fa-pinterest"></i><a href="https://www.pinterest.com" target="_blank">Pinterest</a></li>
+
+<li><i class="fa-solid fa-graduation-cap"></i><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+
+<li><i class="fa-brands fa-stack-overflow"></i><a href="https://stackoverflow.com" target="_blank">Stack Overflow</a></li>
+
+<li><i class="fa-brands fa-spotify"></i><a href="https://www.spotify.com" target="_blank">Spotify</a></li>
+
+<li><i class="fa-brands fa-apple"></i><a href="https://www.apple.com" target="_blank">Apple</a></li>
+
+<li><i class="fa-brands fa-amazon"></i><a href="https://www.amazon.com" target="_blank">Amazon</a></li>
+
+<li><i class="fa-brands fa-google"></i><a href="https://www.google.com" target="_blank">Google</a></li>
+
+<li><i class="fa-brands fa-twitch"></i><a href="https://www.twitch.tv" target="_blank">Twitch</a></li>
+
+<li><i class="fa-brands fa-telegram"></i><a href="https://telegram.org" target="_blank">Telegram</a></li>
+
+<li><i class="fa-brands fa-whatsapp"></i><a href="https://www.whatsapp.com" target="_blank">WhatsApp</a></li>
+
+<li><i class="fa-brands fa-etsy"></i><a href="https://www.etsy.com" target="_blank">Etsy</a></li>
+
+<li><i class="fa-solid fa-droplet"></i><a href="https://www.drop.com" target="_blank">Drop</a></li>
+
+<li><i class="fa-brands fa-medium"></i><a href="https://medium.com" target="_blank">Medium</a></li>
+
+<li><i class="fa-brands fa-wordpress"></i><a href="https://wordpress.com" target="_blank">WordPress</a></li>
+
+<li><i class="fa-brands fa-slack"></i><a href="https://slack.com" target="_blank">Slack</a></li>
+
+<li><i class="fa-brands fa-salesforce"></i><a href="https://www.salesforce.com" target="_blank">Salesforce</a></li>
+
+<li><i class="fa-brands fa-skype"></i><a href="https://www.skype.com" target="_blank">Skype</a></li>
+
+<li><i class="fa-brands fa-discord"></i><a href="https://discord.com" target="_blank">Discord</a></li>
+<li><i class="fa-solid fa-play"></i><a href="https://www.hulu.com" target="_blank">Hulu</a></li>
+
+<li><i class="fa-brands fa-quora"></i><a href="https://www.quora.com" target="_blank">Quora</a></li>
+
+<li><i class="fa-brands fa-stack-exchange"></i><a href="https://stackexchange.com" target="_blank">Stack Exchange</a></li>
+
+<li><i class="fa-brands fa-yahoo"></i><a href="https://www.yahoo.com" target="_blank">Yahoo</a></li>
+
+<li><i class="fa-brands fa-microsoft"></i><a href="https://www.bing.com" target="_blank">Bing</a></li>
+
+<li><i class="fa-brands fa-android"></i><a href="https://www.android.com" target="_blank">Android</a></li>
+
+<li><i class="fa-brands fa-trello"></i><a href="https://trello.com" target="_blank">Trello</a></li>
+
+<li><i class="fa-solid fa-briefcase"></i><a href="https://www.indeed.com" target="_blank">Indeed</a></li>
+
+<li><i class="fa-brands fa-shopify"></i><a href="https://www.shopify.com" target="_blank">Shopify</a></li>
+
+<li><i class="fa-brands fa-behance"></i><a href="https://www.behance.net" target="_blank">Behance</a></li>
+
+<li><i class="fa-brands fa-vimeo"></i><a href="https://vimeo.com" target="_blank">Vimeo</a></li>
+
+<li><i class="fa-brands fa-patreon"></i><a href="https://www.patreon.com" target="_blank">Patreon</a></li>
+        </ul>
+    </aside>
+
+</body>
+
+</html>

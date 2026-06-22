@@ -1,0 +1,171 @@
+/* Scroll bar */
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent !important;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgba(114, 116, 115, 0.8);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: rgb(138, 139, 139);
+}
+
+
+
+html,
+body {
+    background-color: #0f0f0f;
+    margin: 0%;
+    padding: 0%;
+
+}
+
+
+
+main img {
+    width: 60%;
+    height: auto;
+    margin-top: -40px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+main h1 {
+    font-size: 70px;
+    color: aliceblue;
+    font-weight: bold;
+    margin-top: -99px;
+}
+
+main h2 {
+    font-size: 20px;
+    color: rgb(161, 161, 161);
+    /* font-weight: bold; */
+    margin-top: -30px;
+}
+
+main button {
+    padding: 12px 22px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(204, 176, 14);
+}
+
+main button:hover {
+    background-color: rgb(139, 139, 5);
+}
+
+main button a {
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: medium;
+}
+
+
+main p {
+    color: rgb(160, 154, 154);
+    cursor: pointer;
+}
+
+
+
+/* Media query   */
+
+/* Mac book pro */
+/*  
+@media (min-width: 1025px) and (max-width: 1400px) {
+main 
+{
+    margin-top: 200px;
+}
+} */
+
+/* Tablet View */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    main {
+        margin-top: 300px;
+    }
+
+    main p {
+        font-size: 22px;
+    }
+
+
+
+}
+
+
+/* Moble phone small device */
+
+
+@media (max-width: 480px) {
+
+
+    main {
+        margin-top: 250px;
+        gap: 60px;
+    }
+
+    main img {
+        margin-bottom: 20px;
+    }
+
+    main h1 {
+        font-size: 30px;
+
+    }
+
+    main h2 {
+        font-size: 12px;
+        margin-left: 20px;
+        text-align: center;
+    }
+
+
+
+
+
+}
+
+
+/* Moble phone larges deivces */
+
+@media (max-width: 768px) {
+
+
+    main {
+        margin-top: 200px;
+        gap: 40px;
+    }
+
+    main h1 {
+        font-size: 30px;
+
+    }
+
+    main h2 {
+        font-size: 15px;
+        margin-right: 20px;
+    }
+
+    main p {
+        font-size: 8px;
+        text-align: center;
+    }
+}

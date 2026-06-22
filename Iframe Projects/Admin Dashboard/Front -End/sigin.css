@@ -1,0 +1,717 @@
+/* Scroll bar */
+
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent !important;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgba(114, 116, 115, 0.8);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: rgb(138, 139, 139);
+}
+
+
+
+html,
+body {
+    padding: 0%;
+    margin: 0%;
+    background-color: #0f0f0f;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+body>button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    /* background-color: orangered; */
+    background: linear-gradient(145deg, #ff0000, #1f7a3a, #2b2b2b);
+
+
+    margin-top: 30px;
+    margin: 20px 0px 0px 20px;
+
+}
+
+
+
+body>button a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: large;
+
+}
+
+
+main img {
+    width: 20%;
+    height: auto;
+    margin-top: -40px;
+
+
+}
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main h1 {
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: -20px;
+    cursor: pointer;
+
+}
+
+main p {
+    color: aliceblue;
+    font-weight: bold;
+    margin-top: -20px;
+    cursor: pointer;
+}
+
+main p b {
+    color: rgb(34, 230, 16);
+    cursor: pointer;
+}
+
+main form {
+    width: 40%;
+    background: linear-gradient(145deg, #ff0000, #1f7a3a, #2b2b2b);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+
+main form label {
+    color: aliceblue;
+    font-weight: bold;
+}
+
+
+/*  */
+
+main form .password-box {
+
+    width: 100%;
+    position: relative;
+}
+
+main form .password-box #eye {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+
+
+
+main form .password-box input {
+    box-sizing: border-box;
+    width: 100%;
+    padding-right: 40px;
+}
+
+
+/*  */
+main form input {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    border: 2px solid transparent;
+
+}
+
+main form input:hover {
+    border: 2px solid red;
+}
+
+main form button {
+    padding: 10px;
+    border: none;
+    background-color: red;
+    color: aliceblue;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+main form button:hover {
+    background-color: #a10f0f;
+}
+
+
+main form p {
+    margin-bottom: 10px;
+}
+
+main form #btnSection button {
+    border: none;
+    padding: 33px 40px;
+    background-color: rgb(173, 162, 162);
+    transition: 0.3s ease-in-out;
+}
+
+main form #btnSection {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+main form #btnSection button a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+
+
+main form #btnSection button:nth-of-type(1):hover {
+    background-color: orangered;
+}
+
+main form #btnSection button:nth-of-type(2):hover {
+    background-color: rgb(56, 56, 235);
+}
+
+main p:nth-of-type(2) {
+    color: rgb(155, 150, 150);
+    cursor: pointer;
+}
+
+/* Password hide ? show  */
+
+.password-box {
+    position: relative;
+    width: 350px;
+}
+
+.password-box input {
+    width: 100%;
+    height: auto;
+    padding-right: 40px;
+    font-size: 14px;
+}
+
+.password-box span {
+    position: absolute;
+    right: -30px;
+    top: 8px;
+    cursor: pointer;
+    user-select: none;
+}
+
+
+main form #forgetPass {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main form #forgetPass h3 a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+main form #forgetPass h3 a:hover {
+    color: rgb(211, 211, 211);
+    cursor: pointer;
+}
+
+
+
+
+@media (max-width: 676px) {
+    body>button {
+        border: none;
+        padding: 7px 17px;
+    }
+}
+
+@media (max-width: 530px) {
+    main p {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1000px) {
+    main form #btnSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+@media (max-width: 500px) {
+    body>button {
+        padding: 4px 8px;
+        font-size: xx-small;
+        /* readable */
+    }
+
+    main h1 {
+        font-size: 40px;
+        margin-top: -10px;
+        margin-bottom: 30px;
+    }
+
+
+    main form>input,
+    main form .password-box input {
+        padding: 2px 5px;
+        font-size: 8px;
+    }
+
+    main form .password-box span {
+        font-size: 10px;
+    }
+
+
+    main form>button {
+        padding: 5px 10px;
+    }
+
+    main form p:nth-of-type(1) {
+
+        font-size: 12px;
+
+    }
+
+}
+
+@media (max-width: 1000px) {
+    main {
+        margin-top: 100px;
+    }
+
+    main img {
+        width: 400px;
+        height: auto;
+    }
+
+    main #siinform {
+        width: 60%;
+    }
+
+    main form #forgetPass {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    main form #forgetPass h3 {
+        margin-left: 3px;
+        font-size: 13px;
+    }
+
+    main form p:nth-of-type(1) {
+        text-align: center;
+    }
+}
+
+/* Verify html > css */
+
+
+#verifymail {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+#verifymail>p {
+    color: rgb(158, 157, 157);
+}
+
+#verifymail div form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 300px;
+    height: auto;
+    background-color: rgb(68, 68, 68);
+    padding: 10px;
+    border-radius: 20px;
+}
+
+#verifymail div form label {
+    color: white;
+    font-weight: bold;
+}
+
+#verifymail div form input {
+    width: 90%;
+    height: auto;
+    padding: 8px 0px;
+    background-color: rgb(202, 200, 200);
+    outline: none;
+    border-radius: 10px;
+}
+
+@media (min-width:900px) and (max-width:1440px) {
+    #verifymail {
+        margin-top: 100px;
+    }
+}
+
+
+@media (max-width:470px) {
+    #verifymail h1 {
+        font-size: 26px;
+    }
+
+    #verifymail {
+        margin: 50px;
+
+    }
+
+}
+
+#verifymail div form button {
+    font-weight: bold;
+    font-size: large;
+    background-color: rgb(0, 85, 212);
+    border: none;
+    padding: 14px 40px;
+    color: white;
+    border-radius: 10px;
+}
+
+#verifymail div form button:hover {
+    background-color: rgb(3, 43, 102);
+}
+
+
+#verifymail div form a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: large;
+}
+
+#verifymail div form a:hover {
+    color: gray;
+}
+
+#verifymail h1 {
+    color: wheat;
+}
+
+
+/* Sigin Up html > css */
+
+#sigUpMain form label b {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#sigUpMain h1 {
+    margin-top: 10px;
+}
+
+main form .password-box #eyes {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#sigUpMain p {
+    color: rgb(238, 238, 238);
+}
+
+
+/* Reset password */
+
+#reesetPass form a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#reesetPass form a:hover {
+    color: rgb(196, 195, 195);
+
+}
+
+#reesetPass form button {
+    margin-bottom: -5px;
+}
+
+#reesetPass form {
+    padding: 20px;
+    width: 30%;
+}
+
+#reesetPass form .password-box {
+
+    width: 100%;
+    position: relative;
+}
+
+#reesetPass form .password-box #eyesR {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+#reesetPass form .password-box input {
+    box-sizing: border-box;
+    width: 100%;
+    padding-right: 40px;
+}
+
+
+
+
+
+/* Media query */
+
+
+@media (max-width:2000px) {
+    #reesetPass img {
+        width: 400px;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: -50px;
+    }
+
+    #reesetPass p {
+        color: rgb(182, 182, 182);
+    }
+}
+
+
+@media (max-width:500px) {
+    #reesetPass h1 {
+        font-size: 38px;
+        margin-bottom: 40px;
+    }
+
+    #reesetPass p {
+        font-size: 12px;
+        margin-bottom: 20px;
+    }
+
+    #reesetPass p:nth-of-type(2) {
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        /* old name */
+        white-space: normal;
+        text-align: center;
+    }
+
+    #reesetPass form label {
+        font-size: 8px;
+    }
+
+    #reesetPass form .password-box input,
+    #reesetPass form>input,
+    #reesetPass form button {
+        padding: 3px 5px;
+        font-size: 6px;
+    }
+
+    #reesetPass form center a {
+        font-size: 10px;
+    }
+
+    #reesetPass form .password-box #eyesR {
+        font-size: 5px;
+        margin-top: 2px;
+    }
+
+}
+
+@media (max-width:500px) {
+    .otp-box input {
+        width: 20px;
+    }
+
+    #otps {
+        padding: 10px;
+        border-radius: 12px;
+        text-align: center;
+        width: 50%;
+        background: linear-gradient(145deg, #ff0000, #1f7a3a, #2b2b2b);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    }
+
+
+    #otpsection img {
+        width: 400px;
+        height: auto;
+        margin-top: -110px;
+        margin-bottom: -50px;
+    }
+
+}
+
+/* Otps verification */
+
+#otpsection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+#otpsection img {
+    width: 30%;
+    height: auto;
+    margin-top: -110px;
+    margin-bottom: -50px;
+}
+
+#otpsection h2 {
+    color: wheat;
+    font-weight: bold;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+#otpsection p {
+    color: white;
+    font-weight: bold;
+    margin-top: -20px;
+    cursor: pointer;
+}
+
+
+#otps {
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+    width: 30%;
+    background: linear-gradient(145deg, #ff0000, #1f7a3a, #2b2b2b);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+.otp-box {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin: 20px 0;
+}
+
+.otp-box input {
+    width: 25%;
+    height: 40px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+/* Media Query */
+
+@media (max-width:1000px) {
+    #otpsection img {
+        width: 400px;
+        height: auto;
+        margin-top: -110px;
+        margin-bottom: -50px;
+    }
+}
+
+
+@media (max-width:570px) {
+    .otp-box input {
+        width: 85%;
+        height: 40px;
+    }
+}
+
+@media (max-width:500px) {
+    .otp-box input {
+        width: 20px;
+    }
+
+    #otps {
+        padding: 10px;
+        border-radius: 12px;
+        text-align: center;
+        width: 50%;
+        background: linear-gradient(145deg, #ff0000, #1f7a3a, #2b2b2b);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+    }
+
+
+    #otpsection img {
+        width: 400px;
+        height: auto;
+        margin-top: -110px;
+        margin-bottom: -50px;
+    }
+
+}
+
+
+#otpsection #otps #otip {
+    background-color: rgb(0, 140, 255);
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    color: white;
+    border-radius: 10px;
+    font-size: large;
+}
+
+#otpsection #otps #otip:hover {
+    background-color: rgb(12, 112, 194);
+}
+
+
+#otpsection #otps p {
+    margin-top: 10px;
+}
+
+
+
+#otpsection #otps a {
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    text-decoration: none;
+    margin: 15px 0px;
+
+}
+
+#otpsection #otps a:hover {
+    color: rgb(182, 177, 177);
+}

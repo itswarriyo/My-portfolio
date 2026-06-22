@@ -1,0 +1,919 @@
+@media (min-width:1025px) and (max-width:1900px) {
+
+    #mainUlAside nav ul li:nth-of-type(2) a {
+        color: rgb(4, 189, 4);
+        font-size: 12px;
+        padding: 7px 10px;
+
+    }
+
+    #mainUlAside nav ul li:nth-of-type(2) a b {
+        font-size: 14px;
+    }
+
+    #mainUlAside #menueCloser {
+        display: none;
+    }
+
+    #headerSection {
+
+        height: 5%;
+        /* padding: 13px 0px; */
+        align-items: center;
+    }
+
+    #headerSection nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 30px;
+        margin-left: 280px;
+    }
+
+
+    #headerSection nav #directB {
+        display: none;
+    }
+
+
+}
+
+
+@media (max-width:1340px) {
+    #headerSection nav ul {
+
+        margin-left: 200px;
+    }
+
+}
+
+
+@media (max-width:1180px) {
+    #headerSection nav ul {
+
+        margin-left: 110px;
+    }
+
+
+    #auraCard.aura-collapsed {
+
+        margin-left: 700px;
+        width: 280px;
+
+    }
+
+
+}
+
+
+@media (min-width:1025px) and (max-width:1277px) {
+    summary {
+        list-style: none;
+        cursor: pointer;
+        display: flex;
+        gap: 80px;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    #mainUlAside nav ul li:nth-of-type(7) span:nth-of-type(2) {
+        margin-left: 40px;
+    }
+
+
+    #mainUlAside nav ul #auraLi {
+
+        margin-top: 50px;
+    }
+
+
+    #startAiSect #art2 {
+
+        padding: 10px;
+
+    }
+
+    #startAiSect #art2 div h2 {
+
+        font-size: 17px;
+    }
+
+    #startAiSect #art2 div h1 {
+        font-size: 22px;
+        margin-top: 40px;
+    }
+
+    #startAiSect #art2 #div2 h1 {
+        margin-top: 10px;
+    }
+
+    #startAiSect #art2 #div2 h1 {
+        font-size: 17px;
+    }
+
+}
+
+
+
+
+@media (min-width:1025px) and (max-width:1065px) {
+    summary {
+        gap: 80px;
+    }
+
+
+    #mainUlAside nav ul li:nth-of-type(7) span:nth-of-type(2) {
+        margin-left: 30px;
+    }
+
+}
+
+
+
+@media (max-width:1024px) {
+    #mainUlAside {
+        margin-left: -430px;
+        z-index: 999999;
+        transition: 0.4s ease;
+    }
+
+    #mainUlAside.asideSH {
+        margin-left: 0px;
+    }
+
+    #mainUlAside #menueCloser {
+        display: inline-block;
+    }
+
+
+    #collaper {
+        margin-left: 20px;
+    }
+
+
+    #mainUlAside nav ul li:nth-of-type(1):nth-of-type(1) img {
+        margin-left: -40px;
+    }
+
+    #mainUlAside nav ul li:nth-of-type(2) a {
+        color: rgb(4, 189, 4);
+        font-size: 15px;
+        padding: 4px 9px;
+
+    }
+
+
+    #mainUlAside nav ul li:nth-of-type(2) a b {
+        font-size: 15px;
+    }
+
+    #headerSection {
+
+        height: 5%;
+        margin-left: 20px;
+    }
+
+    #headerSection #directA {
+        display: none;
+    }
+
+
+    #headerSection nav ul {
+        gap: 30% !important;
+        margin-left: 90% !important;
+    }
+
+
+    #headerSection nav {
+        gap: 30%;
+    }
+
+    #mainUlAside {
+        width: 30%;
+    }
+
+    #popmain>button {
+        margin-top: 15px;
+        background-color: rgb(49, 49, 49);
+        border: 2px solid grey;
+        padding: 10px 30px;
+        border-radius: 14px;
+    }
+
+    #popmain>button:hover {
+        background-color: rgb(94, 93, 93);
+    }
+
+    #startAiSect {
+        display: grid;
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+    }
+
+    #startAiSect #art1 {
+        margin-right: 26px;
+        margin-left: 20px;
+    }
+
+
+    #startAiSect #art2 div {
+        width: 100%;
+        margin-right: 13px;
+
+    }
+
+    #startAiSect #art2 div .btnGt,
+    #startAiSect #art2 #div2 .btnGt {
+        right: -85%;
+
+    }
+
+
+
+
+    #startAiSect #art2 #div2 {
+
+        width: 90%;
+
+    }
+
+
+    #oRc {
+
+        margin-top: 610px;
+    }
+
+    .graphGrid {
+        display: grid;
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .rightPanel {
+        width: 96%;
+    }
+
+
+
+    #auraCard.aura-collapsed {
+
+        margin-left: 600px;
+        width: 280px;
+
+    }
+
+}
+
+
+
+@media (max-width:887px) {
+
+    #mainUlAside {
+        width: 280px;
+    }
+
+
+
+
+    .rightPanel {
+        margin-right: 20px;
+        width: 95%;
+    }
+
+    #auraCard.aura-collapsed {
+
+        margin-left: 500px;
+        width: 260px;
+
+    }
+
+}
+
+@media (max-width:862px) {
+    .rightPanel {
+        margin-right: 20px;
+        width: 90%;
+    }
+
+}
+
+@media (max-width:750px) {
+
+    #startAiSect #art2 div .btnGt,
+    #startAiSect #art2 #div2 .btnGt {
+        right: -80%;
+
+    }
+
+
+    #auraCard.aura-collapsed {
+
+        margin-left: 400px;
+        width: 260px;
+
+    }
+
+}
+
+
+@media (max-width:817px) {
+
+    #oRc div:nth-of-type(1) div:nth-of-type(2) span:nth-of-type(1),
+    #oRc div:nth-of-type(2) div:nth-of-type(2) span:nth-of-type(1),
+    #oRc div:nth-of-type(3) div:nth-of-type(2) span:nth-of-type(1) {
+        font-size: x-large;
+
+    }
+
+    #oRc div:nth-of-type(1) div:nth-of-type(2) span:nth-of-type(2),
+    #oRc div:nth-of-type(2) div:nth-of-type(2) span:nth-of-type(2),
+    #oRc div:nth-of-type(3) div:nth-of-type(2) span:nth-of-type(2) {
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width:777px) {
+
+    #oRc div:nth-of-type(1) div:nth-of-type(1) span,
+    #oRc div:nth-of-type(2) div:nth-of-type(1) span,
+    #oRc div:nth-of-type(3) div:nth-of-type(1) span {
+
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width:680px) {
+
+    #popmain div input {
+
+        width: 150%;
+
+    }
+
+
+    #popmain div div {
+        top: 12px;
+        right: -130px;
+
+    }
+
+
+    #oRc div:nth-of-type(1) div:nth-of-type(2) span:nth-of-type(1),
+    #oRc div:nth-of-type(2) div:nth-of-type(2) span:nth-of-type(1),
+    #oRc div:nth-of-type(3) div:nth-of-type(2) span:nth-of-type(1) {
+        font-size: large;
+    }
+
+    #oRc div:nth-of-type(1) div:nth-of-type(2) span:nth-of-type(2),
+    #oRc div:nth-of-type(2) div:nth-of-type(2) span:nth-of-type(2),
+    #oRc div:nth-of-type(3) div:nth-of-type(2) span:nth-of-type(2) {
+        font-size: 9px;
+    }
+
+
+    #oRc div:nth-of-type(1) div:nth-of-type(1) span,
+    #oRc div:nth-of-type(2) div:nth-of-type(1) span,
+    #oRc div:nth-of-type(3) div:nth-of-type(1) span {
+
+        font-size: 9px;
+    }
+
+    #oRc div:nth-of-type(3) div:nth-of-type(1) button,
+    #oRc div:nth-of-type(1) div:nth-of-type(1) button,
+    #oRc div:nth-of-type(2) div:nth-of-type(1) button {
+        padding: 10px 10px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #progend #mwk div:nth-of-type(1) h3,
+    #progend #mwk div:nth-of-type(2) h3,
+    #progend #mwk div:nth-of-type(3) h3 {
+        font-size: 10px;
+    }
+
+
+    #progend #mwk div:nth-of-type(1) span,
+    #progend #mwk div:nth-of-type(2) span,
+    #progend #mwk div:nth-of-type(3) span {
+        padding: 2px 7px;
+    }
+
+
+    #auraCard.aura-collapsed {
+
+        margin-left: 300px;
+        width: 260px;
+
+    }
+
+
+
+}
+
+@media (max-width:669px) {
+    #oRc {
+
+        margin-top: 630px;
+
+    }
+
+}
+
+@media (max-width:639px) {
+    #oRc {
+
+        margin-top: 660px;
+
+    }
+
+    #topSpTable {
+        margin-top: 130px;
+    }
+
+
+    #topSpTable::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+
+    }
+
+    #topSpTable::-webkit-scrollbar-track {
+        background: #1e1e1f;
+        border-radius: 10px;
+    }
+
+    #topSpTable::-webkit-scrollbar-thumb {
+        background: linear-gradient(45deg, #4facfe, #00f2fe);
+        border-radius: 10px;
+    }
+
+    #topSpTable::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(45deg, #43e97b, #38f9d7);
+
+    }
+
+
+}
+
+
+@media (max-width:600px) {
+    #headerSection nav {
+        gap: 0px !important;
+    }
+
+    #headerSection nav ul {
+        margin-right: -130px !important;
+    }
+
+
+    #startAiSect #art2 #div2 {
+
+        width: 86%;
+
+    }
+
+    #startAiSect #art1 p {
+        font-size: 12px;
+    }
+
+    #startAiSect #art1 button a {
+
+        font-size: 14px;
+    }
+
+    #startAiSect #art1 button {
+        padding: 4px 9px;
+    }
+
+
+    #oRc {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: space-between;
+    }
+
+    #oRc>div {
+        width: 87%;
+        margin-left: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+@media (max-width:557px) {
+    #mainUlAside {
+        width: 230px;
+    }
+
+    #mainUlAside nav ul li:nth-of-type(3) details summary,
+    #mainUlAside nav ul li:nth-of-type(3) i,
+    #mainUlAside nav ul li:nth-of-type(4) details summary b,
+    #mainUlAside nav ul li:nth-of-type(5) details summary b {
+        font-size: 12px;
+    }
+
+
+
+
+    #mainUlAside nav ul li:nth-of-type(7) span {
+        margin-right: -40px;
+    }
+
+    #mainUlAside nav ul li:nth-of-type(3) details summary {
+        gap: 85px;
+    }
+
+    #mainUlAside nav ul li:nth-of-type(4) details summary {
+        gap: 115px;
+    }
+
+    #mainUlAside nav ul li:nth-of-type(5) details summary {
+        gap: 100px;
+    }
+
+    #mainUlAside nav ul li:nth-of-type(4) details p {
+        font-size: 12px;
+    }
+
+
+    #startAiSect #art2 div .btnGt,
+    #startAiSect #art2 #div2 .btnGt {
+        right: -75%;
+
+    }
+
+
+    #oRc>div {
+        width: 83%;
+        margin-right: 25px;
+    }
+
+
+    #progend .circle-wrapper {
+        width: 150px;
+        height: 150px;
+    }
+
+    /* SVG base */
+    #progend .circle-svg {
+        width: 150px;
+        height: 150px;
+    }
+
+    #progend h2 {
+        font-size: 15px;
+    }
+
+
+    #progend .center-label {
+        font-size: 12px;
+    }
+
+    #progend #mwk {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: space-around;
+        gap: 20px;
+    }
+
+
+    #tabSection {
+        grid-template-columns: 1fr;
+        padding-right: 40px;
+    }
+
+
+
+    #progend {
+        margin-top: 30px;
+        margin-left: 2%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #111;
+        padding: 10px;
+        border-radius: 20px;
+        width: 90%;
+        height: auto;
+    }
+
+
+    #auraCard.aura-collapsed {
+
+        margin-left: 200px;
+        width: 260px;
+
+    }
+
+}
+
+
+@media (max-width:457px) {
+    #mainUlAside {
+        width: 180px;
+    }
+
+    #mainUlAside nav ul li:nth-of-type(2) a b {
+        font-size: 13px !important;
+    }
+
+
+    #mainUlAside nav ul li:nth-of-type(3) details summary {
+
+        gap: 55px;
+
+    }
+
+
+    #mainUlAside nav ul .fade-sectionplzsmall details p {
+        font-size: 9px !important;
+    }
+
+
+    #mainUlAside nav ul li:nth-of-type(4) details summary {
+        gap: 85px;
+    }
+
+    #mainUlAside nav ul li:nth-of-type(5) details summary {
+        gap: 70px;
+    }
+
+
+    #mainUlAside nav ul li:nth-of-type(7) span {
+        margin-left: 2px;
+    }
+
+    #mainUlAside nav ul li:nth-of-type(7) span:nth-of-type(2) {
+        font-size: 10px;
+        margin-left: 28px;
+    }
+
+    #mainUlAside nav ul #auraLi img {
+        width: 60px;
+    }
+
+    #mainUlAside nav ul #auraLi p {
+        text-align: center;
+    }
+
+
+    #mainUlAside nav ul li:nth-of-type(4) details p {
+        font-size: 8px;
+    }
+
+    #mainUlAside nav ul li:nth-of-type(5) details details p {
+        font-size: 8px;
+    }
+
+    #mainUlAside nav ul li:nth-of-type(5) details details p:nth-of-type(1) {
+        margin-top: 25px;
+    }
+
+
+    #popmain div input {
+
+        width: 100%;
+
+    }
+
+    #popmain div div {
+        top: 12px;
+        right: -50px;
+
+    }
+
+
+    #startAiSect #art2 div .btnGt,
+    #startAiSect #art2 #div2 .btnGt {
+        right: -70%;
+
+    }
+
+    #startAiSect #art2 div .btnGt span,
+    #startAiSect #art2 #div2 .btnGt span {
+        font-size: 18px;
+    }
+
+    #startAiSect #art2 #div2 {
+
+        width: 82%;
+
+    }
+
+
+
+    #auraCard.aura-collapsed {
+
+        margin-left: 100px;
+        width: 260px;
+
+    }
+
+}
+
+@media (max-width:777px) {
+
+    #headerSection nav ul {
+        gap: 20px !important;
+        margin-left: 30% !important;
+    }
+
+    #mainUlAside nav ul li:nth-of-type(2) a b {
+        font-size: 15px;
+    }
+
+    #headerSection nav {
+        gap: 15%;
+    }
+
+    #mainUlAside nav ul li:nth-of-type(1):nth-of-type(1) img {
+        margin-left: -20px;
+        margin-top: 20px;
+        width: 150px;
+    }
+
+}
+
+@media (max-width:500px) {
+
+    #headerSection nav ul {
+        gap: 4px !important;
+        margin-left: 1% !important;
+    }
+
+
+    #headerSection nav {
+        gap: 1%;
+    }
+
+    #oRc {
+
+
+        margin-left: -15px;
+
+
+    }
+
+}
+
+@media (max-width:412px) {
+
+    #startAiSect #art2 div h1,
+    #startAiSect #art2 #div2 h1 {
+        font-size: 17px;
+        margin-top: 40px;
+    }
+
+    #startAiSect #art2 #div2 h1 {
+        margin-top: 30px;
+    }
+
+    #startAiSect #art2 div h2,
+    #startAiSect #art2 #div2 h2 {
+        font-size: 12px;
+    }
+
+    #startAiSect #art2 div button a {
+        font-size: 12px;
+    }
+
+    #oRc {
+
+        margin-top: 610px;
+
+    }
+
+}
+
+@media (max-width:387px) {
+    #headerSection nav ul li:nth-of-type(1) * {
+        font-size: 8px;
+        padding: 2px;
+    }
+
+    #headerSection nav ul li:nth-of-type(2) i,
+    #headerSection nav ul li:nth-of-type(3) i {
+
+        font-size: 12px;
+    }
+
+    #headerSection nav ul li:nth-of-type(4) img {
+        width: 40px;
+    }
+
+
+    #startAiSect #art2 div .btnGt,
+    #startAiSect #art2 #div2 .btnGt {
+        right: -65%;
+
+    }
+
+
+    #startAiSect #art1 p {
+        font-size: 10px;
+    }
+
+    #startAiSect #art1 button a {
+
+        font-size: 10px;
+    }
+
+    #startAiSect #art1 button {
+        padding: 1px 7px;
+    }
+
+
+    #oRc {
+
+        margin-top: 640px;
+
+        margin-left: -15px;
+
+    }
+
+
+    #oRc>div {
+        width: 80%;
+        margin-right: 25px;
+    }
+
+
+
+    #auraCard.aura-collapsed {
+
+        margin-left: 70px;
+        width: 220px;
+
+    }
+
+    #auraCard.aura-collapsed section div p {
+        font-size: 10px;
+    }
+
+    #auraCard.aura-collapsed section div h3 {
+        font-size: 15px;
+    }
+
+
+
+
+}
+
+
+@media (max-width:357px) {
+
+    #headerSection nav ul li:nth-of-type(1) * {
+        font-size: 6px;
+        padding: 1px;
+    }
+
+    #headerSection nav ul li:nth-of-type(2) i,
+    #headerSection nav ul li:nth-of-type(3) i {
+
+        font-size: 9px;
+    }
+
+    #headerSection nav ul li:nth-of-type(4) img {
+        width: 30px;
+    }
+
+    #headerSection nav ul {
+        gap: 2px !important;
+        margin-left: 1% !important;
+    }
+
+
+    #headerSection nav {
+        gap: 5px;
+    }
+
+    #headerSection nav {
+        gap: 2px;
+    }
+
+    #headerSection nav ul li:nth-of-type(3) sup {
+        padding: 2px 2px;
+        font-size: 7px;
+        top: 7px;
+        right: -18px;
+        text-align: center;
+    }
+
+
+}

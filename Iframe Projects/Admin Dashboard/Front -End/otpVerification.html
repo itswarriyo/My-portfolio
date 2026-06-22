@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="sigin.css">
+  <link rel="stylesheet" href="fade.css">
+  <link rel="icon" href="Top logo.png" type="image/png">
+</head>
+
+<body>
+
+  <section id="otpsection">
+
+    <img class="fade-sectionplz" src="Glossy Ak logo with gradient swoosh.png" alt="image">
+
+    <h2 class="fade-sectionplz">OTP Verification</h2>
+    <p class="fade-sectionplz">Enter 6-digit code</p>
+
+    <main id="otps" class="fade-sectionplz">
+
+      <div class="otp-box fade-sectionplz">
+        <input maxlength="1" class="otpbox" type="text" maxlength="1">
+        <input maxlength="1" class="otpbox" type="text" maxlength="1">
+        <input maxlength="1" class="otpbox" type="text" maxlength="1">
+        <input maxlength="1" class="otpbox" type="text" maxlength="1">
+        <input maxlength="1" class="otpbox" type="text" maxlength="1">
+        <input maxlength="1" class="otpbox" type="text" maxlength="1">
+      </div>
+
+      <p class="fade-sectionplz">Didn't receive the email? Click <b onclick="sendotp()"
+          style=" color: rgb(255, 245, 200);"> send it again</b></p>
+      <button style="cursor: pointer;" class="fade-sectionplz" id="otip" onclick="verifyOtip()">Verify</button>
+      <a class="fade-sectionplz" href="index.html">Go to home</a>
+    </main>
+  </section>
+  <script src="script.js"></script>
+  <script src="scriptfade.js"></script>
+</body>
+
+</html>

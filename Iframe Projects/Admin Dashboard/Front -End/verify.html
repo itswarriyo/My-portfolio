@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify E-mail</title>
+    <link rel="stylesheet" href="sigin.css">
+    <link rel="stylesheet" href="fade.css">
+    <link rel="icon" href="Top logo.png" type="image/png">
+</head>
+
+<body>
+
+    <main id="verifymail">
+        <img class="fade-sectionplz" src="Glossy Ak logo with gradient swoosh.png" alt="image">
+        <h1 class="fade-sectionplz">Forget password !</h1>
+        <p class="fade-sectionplz">No worries, we will send you reset instruction.</p>
+        <div>
+            <form id="verifyForm">
+                <label class="fade-sectionplz" for="veriEmail">Enter your mail</label>
+                <input class="fade-sectionplz" type="email" name="email" id="veriEmail"
+                    placeholder="Enter your E-mail....">
+                <label class="fade-sectionplz" for="otp">Enter a conformition code</label>
+                <input class="fade-sectionplz" type="number" name="otp" id="otp" placeholder=" 1 2 3 4">
+
+                <button class="fade-sectionplz" style="cursor: pointer;" onclick="checkmail()"
+                    id="verifybtn">Verify</button>
+                <a style="cursor: pointer;" href="index.html">Go to home</a>
+            </form>
+
+        </div>
+
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+    <script src="scriptfade.js"></script>
+</body>
+
+</html>

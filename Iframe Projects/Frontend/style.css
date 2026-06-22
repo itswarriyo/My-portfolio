@@ -1,0 +1,2132 @@
+/* Impot Links */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Bungee+Tint&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Syncopate:wght@400;700&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+html,
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: "DM Sans", sans-serif;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+
+}
+
+/*--------------- Scrollbar -----------------*/
+
+/* Chrome, Edge, Safari */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+    width: 7px;
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+    background: transparent !important;
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+    background: #ff1a1a;
+    border-radius: 10px;
+}
+
+html::-webkit-scrollbar-thumb:hover,
+body::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(180deg, rgb(185, 149, 32), darkred);
+
+}
+
+/* Firefox */
+/* html, body {
+  scrollbar-width: thin;
+  scrollbar-color: red  black;
+} */
+
+
+/* --------------------Header Section-------------------- */
+
+#headerSection {
+    background-color: rgba(255, 2, 2, 0.9);
+    /* ✅ fixed */
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border-bottom: 2px solid gray; */
+    position: fixed;
+    z-index: 999999;
+    top: 0px;
+    gap: 40px !important;
+}
+
+#headerSection #imgSection img {
+    width: 185px;
+    height: auto;
+    background-color: rgb(255, 255, 255);
+    margin-top: -3px !important;
+    border-radius: 0px 20px 20px 0px;
+}
+
+
+#headerSection #navLinks li {
+    list-style: none;
+    font-size: 16px;
+    transition: transform 0.5s ease-in;
+}
+
+#headerSection #navLinks li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    transition: transform 0.5s ease-in;
+}
+
+#headerSection #navLinks li a:hover {
+    color: rgb(0, 0, 0);
+}
+
+#headerSection #navLinks li:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: black;
+    border-radius: 10px;
+    width: fit-content;
+    transform: scale(0.9);
+}
+
+#headerSection #btnSection {
+    margin-right: 40px;
+}
+
+#headerSection #ulSection ul {
+    display: flex;
+    gap: 20px;
+}
+
+#headerSection #btnSection button {
+    background: linear-gradient(190deg, #111, #666, #111);
+    background-size: 200% auto;
+    padding: 10px 13px;
+    border-radius: 10px 20px;
+    color: rgb(243, 243, 243);
+    font-weight: bold;
+    animation: btnsectionAnmi 6s linear infinite;
+}
+
+
+@keyframes btnsectionAnmi {
+
+    from {
+        transform: scale(1.1);
+    }
+
+    to {
+        background-position: 200% center;
+        transform: scale(1.2);
+    }
+}
+
+
+
+#headerSection #btnSection button:hover {
+    cursor: pointer;
+}
+
+/* -------------Home Section---------- */
+
+
+
+
+
+#homeSection {
+    margin-top: 73px;
+    display: flex;
+    flex-direction: column;
+    gap: 85px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 550px;
+    background-color: #666;
+    position: relative;
+}
+
+#homeSection .contentSection {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+}
+
+#homeSection .first h3 {
+    background-color: rgba(200, 23, 23, 0.8);
+    border-radius: 20px;
+    padding: 7px;
+    width: 35%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 20px;
+
+}
+
+
+#homeSection .secound h1 {
+
+    color: rgb(251, 251, 251);
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 20px 40px 20px 140px;
+    animation: animiH1 8s 1s infinite ease-in;
+
+}
+
+@keyframes animiH1 {
+    from {
+        transform: scale(0.8);
+        border-radius: 20px 40px 20px 140px;
+
+
+
+    }
+
+    to {
+        transform: scale(0.9);
+        background-color: rgba(255, 255, 255, 0.5);
+        color: #000000;
+
+
+    }
+}
+
+#homeSection img {
+    width: 100%;
+    height: 550px;
+    position: absolute;
+}
+
+#homeSection .third p {
+
+    color: rgb(239, 239, 239);
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+    text-shadow: 2px 2px rgb(157, 22, 22);
+    background-color: rgba(1, 1, 1, 0.3);
+    padding: 10px;
+    border-radius: 20px 20px 120px 120px;
+
+}
+
+#homeSection .four button {
+
+    background-color: rgb(187, 21, 181);
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    padding: 15px 25px;
+    font-weight: bold;
+    border-radius: 20px 10px;
+
+    font-size: large;
+
+
+}
+
+#homeSection .four button:hover {
+
+    background-color: rgb(103, 18, 100);
+    color: aliceblue;
+    transform: scale(0.9);
+
+
+}
+
+
+/*------------------ Gallery Section------------------- */
+
+aside>h1 {
+    color: white;
+    text-align: center;
+    margin-top: 70px;
+    font-family: "Bree Serif", serif;
+    letter-spacing: 5px;
+    font-size: 50px;
+
+}
+
+
+#gallerySection {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+    overflow-x: scroll;
+    border-bottom: 6pc solid rgba(128, 128, 128, 0.4);
+    margin-bottom: 80px;
+    border-left: 4px solid rgb(128, 128, 128);
+    border-right: 4px solid rgb(128, 128, 128);
+    /* row-gap: 20px; */
+    column-gap: 50px;
+    scroll-behavior: smooth;
+
+
+}
+
+
+
+#gallerySection .evenly {
+    height: auto;
+    width: 20%;
+    border-radius: 20px 20px 0px 0px;
+    border: 4px solid rgb(97, 96, 96);
+}
+
+
+
+#gallerySection .older {
+    height: auto;
+    width: 13%;
+    border-radius: 40px 40px 0px 0px;
+    border: 4px solid rgb(97, 96, 96);
+}
+
+
+
+
+
+
+
+/* ---------------------- About Us ------------------ */
+
+
+#aboutSection {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 100px;
+    text-align: center;
+
+}
+
+#aboutSection #contentSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+
+#aboutSection #contentSection h1 {
+    color: aliceblue;
+    font-size: 45px;
+    letter-spacing: 5px;
+    width: 100%;
+    background-color: rgba(242, 0, 0, 0.6);
+
+}
+
+#aboutSection #contentSection p {
+    color: rgb(146, 143, 143);
+    margin-top: -30px;
+
+
+}
+
+#aboutSection #contentSection button a {
+    color: white;
+    text-decoration: none;
+}
+
+#aboutSection #contentSection button {
+
+    background-color: rgb(255, 12, 32);
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    padding: 15px 25px;
+    font-weight: bold;
+    border-radius: 20px 10px;
+    width: 15%;
+    text-align: center;
+    font-size: large;
+    margin-bottom: 60px;
+}
+
+#aboutSection #contentSection button:hover {
+
+    background-color: rgb(82, 9, 9);
+    color: aliceblue;
+    transform: scale(0.9);
+
+}
+
+#aboutSection #image {
+    position: relative;
+}
+
+#aboutSection #imgSection #image img {
+    width: 90%;
+    height: auto;
+    border-radius: 15px;
+}
+
+
+#aboutSection #imgSection #cardArticle {
+    background-color: rgb(117, 12, 12);
+    width: 70%;
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    left: 201px;
+
+    border-radius: 10px;
+    transform: translateY(-100px);
+}
+
+#aboutSection #imgSection #cardArticle div {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+#aboutSection #imgSection #cardArticle div * {
+    color: azure;
+}
+
+
+/* ____________MAIN SERVICES________________ */
+
+#mainService {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    background-color: rgb(49, 50, 50);
+    width: 100%;
+    height: auto;
+    padding: 50px;
+}
+
+#mainService #contentSection h1 {
+    color: aliceblue;
+    width: 999px;
+    text-align: center;
+
+    /* margin-left: 260px; */
+}
+
+#mainService #contentSection p {
+    color: rgb(167, 168, 169);
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+#mainService #cardSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 80px;
+
+    padding: 0px 90px 0px 0px;
+}
+
+
+#mainService #cardSection div {
+    border: 1px solid rgb(89, 86, 86);
+    /* padding: 10px; */
+    overflow: hidden;
+    width: 30%;
+    height: 450px;
+
+}
+
+#mainService #cardSection div h2 {
+    color: aliceblue;
+    margin: 10px 0px 20px 20px;
+}
+
+
+#mainService #cardSection div p {
+    color: rgb(173, 175, 176);
+    margin: 10px 0px 10px 20px;
+}
+
+#mainService #cardSection div button {
+
+    background-color: rgb(251, 5, 5);
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+    padding: 7px 19px;
+    border-radius: 10px;
+
+
+}
+
+#mainService #cardSection div button a {
+    color: white;
+    text-decoration: none;
+}
+
+
+#mainService #cardSection div button:hover {
+
+    background-color: rgb(84, 13, 21);
+    color: aliceblue;
+    transform: scale(0.9);
+
+}
+
+
+
+
+
+#mainService #cardSection div img:hover {
+    transform: scaleX(1.1);
+}
+
+
+/* ---------------Rating Section-----------*/
+#ratingSection {
+    display: grid;
+    grid-template-columns: 6fr 3fr 3fr;
+    margin-top: 70px;
+    justify-content: center;
+    align-items: center;
+}
+
+#ratingSection .feedContent {
+
+    margin-left: 20px;
+
+}
+
+#ratingSection .feedContent h1 {
+
+    color: aliceblue;
+    margin-bottom: 15px;
+
+
+}
+
+
+#ratingSection .feedContent h4 {
+
+    color: rgb(152, 153, 154);
+    margin-bottom: 15px;
+}
+
+#ratingSection .feedContent span button {
+
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 8px;
+    margin-left: 12px;
+
+
+}
+
+#ratingSection .feedContent .spanbtn button {
+    background-color: transparent;
+    border: 1px solid red;
+}
+
+
+#ratingSection .rating1 {
+
+    border-radius: 10px;
+    border: 1px solid gray;
+    width: 80%;
+    padding: 20px;
+    background-color: #2c2b2b;
+
+}
+
+#ratingSection .rating1 img {
+
+    border-radius: 90px;
+    width: 50px;
+    height: auto;
+
+}
+
+#ratingSection .rating1 span {
+
+    color: aliceblue;
+
+}
+
+#ratingSection .rating1 h3 {
+    color: wheat;
+    font-size: medium;
+}
+
+#ratingSection .rating1 p {
+    color: wheat;
+    font-size: medium;
+}
+
+/* CryingSection */
+
+#cryingSection {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    background-color: #302f2f;
+    padding: 50px 0px;
+
+}
+
+#cryingSection #ContSection h1 {
+
+    color: #e0dcd5;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 150px 20px;
+    text-align: center;
+}
+
+#cryingSection #ContSection p {
+
+    color: #fffff7;
+    margin-left: 50px;
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+#cryingSection #ContSection button a {
+    color: white;
+    text-decoration: none;
+}
+
+
+#cryingSection #ContSection button {
+
+    margin-left: 50px;
+    margin-top: 50px;
+    background-color: rgb(79, 4, 4);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: large;
+    margin-bottom: 20px;
+
+}
+
+#cryingSection #ContSection button:hover {
+    transform: scale(1.1);
+    background-color: rgb(163, 37, 37);
+}
+
+#cryingSection #ContSection #ingArticle img {
+    width: 100%;
+    height: auto;
+}
+
+
+#cryingSection #ContSection {
+
+    display: grid;
+    height: auto;
+    grid-template-columns: 8fr 4fr;
+    border-radius: 15px;
+    border: 1px solid grey;
+    margin-left: 70px;
+    margin-right: 70px;
+    background: linear-gradient(to right, red, #000000);
+
+}
+
+
+
+#teamSection {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    text-align: center;
+
+}
+
+
+#teamSection #teamContent h1 {
+    color: white;
+    text-align: center;
+}
+
+
+#teamSection #teamContent p {
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#teamSection #teamCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+#teamSection #teamCard div {
+    border: 1px solid gray;
+    width: 20%;
+    height: 500px;
+}
+
+#teamSection #teamCard div:hover {
+    border: 2px solid rgb(251, 17, 17);
+    width: 20%;
+    height: 500px;
+}
+
+#teamSection #teamCard div img {
+    margin: 20px;
+}
+
+#teamSection #teamCard div h2 {
+    color: white;
+    font-size: 25px;
+    text-shadow: 2px 2px red;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 2px solid grey;
+}
+
+#teamSection #teamCard div span {
+    color: rgb(200, 196, 196);
+    /* text-align: start; */
+    margin-bottom: 10px;
+}
+
+#teamSection #teamCard div p {
+    color: #e0dcd5;
+    margin-top: 20px;
+}
+
+
+#teamSection #teamCard div:nth-of-type(2) img {
+    margin-top: 3px;
+}
+
+
+
+
+/* <!---------------------Booking Section-----------------------> */
+
+#bookingSection {
+
+    margin-top: 130px;
+    display: block;
+    text-align: center;
+
+}
+
+
+
+#bookingSection #contentSection h1 {
+
+    color: white;
+    margin-bottom: 15px;
+    font-size: 50px;
+}
+
+
+#bookingSection #contentSection h3 {
+    color: #b8b8b7;
+}
+
+
+#bookingSection #inputSection {
+    margin: 80px 70px 0px 70px;
+    background: linear-gradient(to right, #151414, #ff2727);
+    width: 90%;
+    height: 580px;
+    border-radius: 20px;
+    text-align: start;
+}
+
+
+#bookingSection #inputSection>h1 {
+
+    color: white;
+    text-align: start;
+    /* font-weight: bold; */
+    background-color: rgba(251, 9, 9, 0.7);
+    padding: 8px;
+    border-radius: 16px;
+    width: fit-content;
+    font-size: medium;
+    margin: 38px;
+    margin-top: 20px;
+}
+
+#bookingSection #inputSection {
+    padding: 3px;
+}
+
+#bookingSection #inputSection #firstDiv {
+
+    display: flex;
+
+
+}
+
+#bookingSection #inputSection #firstDiv article input {
+    margin: 22px;
+    padding: 6px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    outline: none;
+    width: 79%;
+    margin-left: 30px;
+
+}
+
+
+
+#bookingSection #inputSection #firstDiv article input:focus {
+    border: 2px solid red !important;
+    outline: none;
+}
+
+#bookingSection #inputSection #firstDiv article input:hover {
+    border: 2px solid rgb(110, 108, 108);
+}
+
+
+#bookingSection #inputSection #firstDiv article label {
+    color: white;
+    margin-left: 28px;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+
+
+
+
+
+
+#bookingSection #inputSection #secoundDiv {
+
+    display: flex;
+
+
+}
+
+#bookingSection #inputSection #secoundDiv article input {
+    margin: 22px;
+    padding: 7px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    outline: none;
+    width: 79%;
+    margin-left: 30px;
+}
+
+
+
+#bookingSection #inputSection #secoundDiv article input:focus {
+    border: 2px solid red !important;
+    outline: none;
+}
+
+#bookingSection #inputSection #secoundDiv article input:hover {
+    border: 2px solid rgb(182, 180, 180);
+}
+
+
+#bookingSection #inputSection #secoundDiv article label {
+    color: white;
+    margin-left: 28px;
+    font-weight: bold;
+    font-size: large;
+}
+
+
+#bookingSection #inputSection #thirdDiv label {
+    color: white;
+    margin-left: 28px;
+    font-weight: bold;
+    font-size: large
+}
+
+#bookingSection #inputSection #thirdDiv textarea {
+    margin: 16px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    outline: none;
+    margin-left: 30px;
+}
+
+
+#bookingSection #inputSection #thirdDiv textarea:focus {
+
+    border: 2px solid red;
+}
+
+
+
+#bookingSection #inputSection button {
+
+    margin-left: 80px;
+    background-color: rgb(225, 0, 255);
+    color: white;
+    padding: 10px 20px;
+    margin-top: 1px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: large;
+    width: 35%;
+}
+
+#bookingSection #inputSection button:hover {
+    transform: scale(1.1);
+    background-color: rgb(68, 11, 74);
+}
+
+#bookingSection #inputSection h1,
+#firstDiv,
+#secoundDiv,
+#thirdDiv {
+
+    margin-left: 50px;
+}
+
+#bookingSection #inputSection h1 {
+
+    margin-left: 70px;
+}
+
+
+#bookingSection #contactSection {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: -410px;
+    margin-left: 750px;
+    text-align: center;
+
+}
+
+#bookingSection #contactSection .art {
+
+    display: block;
+    text-align: start;
+
+    text-align: center;
+    color: white;
+    border: 2px solid gray;
+    border-radius: 10px;
+    width: 70%;
+    margin-bottom: 20px;
+    padding: 20px;
+    margin-left: -8%;
+}
+
+#bookingSection #contactSection .art * {
+
+    margin-bottom: 15px;
+    margin-left: 20px;
+}
+
+#bookingSection h2 {
+
+
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: rgba(26, 25, 25, 1);
+    width: fit-content;
+    padding: 7px 19px;
+    margin: 20px 0px 20px 50px;
+
+
+}
+
+#bookingSection #contactSection .artlast iframe {
+
+    margin-bottom: 15px;
+    margin-left: -167px;
+    border: 2px solid gray;
+    border-radius: 20px;
+    width: 70%;
+    height: 170px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+/* <!-------------FQA`S Section------------------> */
+
+
+
+
+
+#fqasMain {
+    text-align: center;
+}
+
+#fqasMain h1 {
+    color: white;
+    margin-top: 70px;
+    font-weight: bold;
+}
+
+#fqasMain h3 {
+    color: rgb(156, 153, 153);
+    font-weight: bold;
+}
+
+#fqasMain #fqasSection {
+    width: 90%;
+    margin: 100px auto;
+    background-image: url("https://nabmalta.org.mt/wp-content/uploads/2022/11/FAQ-banner.jpg");
+    /* background-color: #460a0a; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: auto;
+    /* fixed: 400px hata diya */
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    /* reduce gap */
+    padding: 40px 0;
+
+    border-radius: 10px;
+}
+
+/* Card styling */
+#fqasMain #fqasSection .card {
+    border: 2px solid gray;
+    width: 80%;
+    margin: 0 auto;
+    /* center properly */
+    height: auto;
+    background: rgba(255, 255, 255, 0.9);
+    /* readability ke liye */
+    border-radius: 8px;
+    padding: 20px;
+
+}
+
+
+#fqasMain #fqasSection .cards label {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+#fqasMain #fqasSection .cards input {
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: 2px solid red;
+}
+
+
+#fqasMain #fqasSection .cards #submit {
+    width: fit-content;
+
+}
+
+#fqasMain #fqasSection .cards #submit:hover {
+    transform: scale(0.9);
+    padding: 8px 15px;
+
+    background-color: wheat;
+}
+
+#fqasMain #fqasSection .cards input:focus {
+
+    border: 2px solid rgb(15, 205, 85) !important;
+    outline: none;
+
+}
+
+
+
+#fqasMain #fqasSection .cards input:hover {
+
+    border: 2px solid rgb(103, 106, 104);
+
+}
+
+
+/* ___________ FOOTER SECTION_______________ */
+
+#footerSection {
+    margin-top: 100px;
+}
+
+#footerSection #firstSect #btnDiv b {
+    padding: 5px 8px;
+    color: white;
+    background-color: red;
+    border-radius: 10px;
+}
+
+#footerSection #firstSect {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#footerSection #firstSect #btnDiv a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+#footerSection #firstSect #btnDiv span {
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#footerSection #firstSect #ulDiv ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#footerSection #firstSect #ulDiv ul li {
+    list-style: none;
+    color: #82807e;
+    font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+}
+
+#footerSection #firstSect #ulDiv ul li a {
+    color: #666;
+    text-decoration: none;
+}
+
+
+#footerSection #firstSect #ulDiv ul li:hover {
+    color: #ffffff;
+
+}
+
+#footerSection #firstSect #iconDiv span a {
+
+    color: rgb(255, 255, 255);
+}
+
+#footerSection #sect2 {
+    margin-top: 25px;
+    width: 100%;
+    height: 80px;
+    border-top: 2px solid wheat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footerSection #sect2 h3 {
+    text-align: center;
+    color: white;
+}
+
+
+
+/* header few */
+#headerSection #hamburger {
+    cursor: pointer;
+}
+
+
+@media screen and (min-width: 1025px) {
+    #headerSection #ulSection #hamburger {
+        display: none;
+    }
+}
+
+/* Default desktop */
+#navLinks {
+    display: flex;
+    gap: 20px;
+}
+
+/* Hamburger hidden on desktop */
+#hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+}
+
+@media (max-width: 1124px) {
+    #mainService #cardSection {
+
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+}
+
+
+/* Mobile / Tablet */
+
+@media (max-width: 1024px) {
+
+
+
+    /* Header */
+
+    #hamburger {
+        display: inline;
+    }
+
+    #navLinks {
+        display: none;
+        /* hidden by default */
+        flex-direction: column;
+        width: 50%;
+        background-color: rgba(146, 25, 25, 0.95);
+        padding: 10px 0px;
+        gap: 10px;
+        border-radius: 10px;
+        text-align: start;
+        width: 130px;
+        position: absolute;
+        top: 75px;
+        left: 50px;
+    }
+
+    #navLinks li {
+        margin-left: 20px;
+    }
+
+    #navLinks.active {
+        display: flex;
+        /* show when clicked */
+    }
+
+    #headerSection {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 10px 0px;
+        gap: 13px;
+        width: 100%;
+        height: 50px;
+
+        justify-content: space-between;
+    }
+
+    #headerSection #imgSection img {
+        width: 170px;
+
+        margin-top: -18px !important;
+
+    }
+
+
+
+    /* Home Section */
+
+
+
+    #homeSection img {
+        width: 100%;
+
+    }
+
+
+    #homeSection .first h3 {
+
+        border-radius: 90px;
+
+    }
+
+    #homeSection .secound h1 {
+
+        color: rgb(251, 251, 251);
+        text-align: center;
+        font-weight: bold;
+        font-size: 40px;
+        background-color: rgba(0, 0, 0, 0.8);
+        border-radius: 20px 40px 20px 140px;
+    }
+
+    #homeSection .third p {
+        font-size: 15px;
+        margin: 0 auto;
+    }
+
+    #homeSection .four button {
+        margin-top: 40px;
+        font-size: 15px;
+    }
+
+
+
+    #gallerySection {
+        flex-direction: row;
+        overflow-x: scroll;
+        /* scroll only if needed */
+        column-gap: 20px;
+        margin: 80px 0px 60px 0px;
+        border-bottom: 2pc solid rgb(76, 73, 73);
+    }
+
+    body>h1 {
+        margin-top: 50px;
+        margin-bottom: -30px;
+        font-size: 35px;
+    }
+
+    /* About section */
+
+    #aboutSection #contentSection p {
+        font-size: 15px;
+    }
+
+    #aboutSection #contentSection button {
+        font-size: 13px;
+        width: 30%;
+    }
+
+
+
+
+    #aboutSection #imgSection #image img {
+        width: 90%;
+        border-radius: 10px;
+    }
+
+
+
+
+    #aboutSection #imgSection #cardArticle {
+        width: 60%;
+        position: absolute;
+        margin-top: 30px;
+        /* margin-left: -25px; */
+        margin-bottom: 200px;
+
+    }
+
+
+
+    #aboutSection #imgSection #cardArticle div * {
+        font-size: small;
+
+    }
+
+
+
+
+    /* Services */
+
+
+
+    #mainService #contentSection h1 {
+        font-size: 25px;
+        margin-right: 100px;
+    }
+
+    #mainService #contentSection p {
+        font-size: 14px;
+        text-align: center;
+        margin-right: 100px;
+    }
+
+
+
+    #mainService #cardSection div img {
+
+        height: 200px;
+    }
+
+    #mainService #cardSection div h2 {
+
+        font-size: medium;
+
+    }
+
+    #mainService #cardSection div p {
+
+        font-size: 15px;
+
+    }
+
+    /* Rating Section */
+
+    #ratingSection {
+        display: flex;
+        flex-direction: column;
+
+        gap: 30px;
+    }
+
+
+
+    /* CryingSection */
+
+    #cryingSection #ContSection #contArticle {
+        gap: 20px;
+    }
+
+    #cryingSection #ContSection #contArticle h1 {
+        font-size: medium;
+        margin-bottom: -27px;
+
+    }
+
+    #cryingSection #ContSection #contArticle p {
+        font-size: 15px;
+        margin-bottom: -27px;
+
+    }
+
+    #cryingSection #ContSection #contArticle button {
+        margin-bottom: 10px;
+    }
+
+    /* <!-- team Section --> */
+
+
+    #teamSection #teamCard {
+
+        display: flex;
+        flex-wrap: wrap;
+
+
+
+    }
+
+    #teamSection #teamCard div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+    }
+
+    #teamSection #teamCard div img {
+        width: 80%;
+        margin-top: 15px;
+        height: auto;
+
+    }
+
+    #teamSection #teamCard div h2 {
+        font-size: medium;
+    }
+
+    /*     <!---------------------Booking Section-----------------------> */
+    /* Booking Section Container */
+
+
+    #bookingSection #contentSection h1 {
+        font-size: 43px;
+    }
+
+    #bookingSection #inputSection h1 {
+        margin-left: 40px !important;
+    }
+
+    #bookingSection #inputSection h1,
+    #firstDiv,
+    #secoundDiv,
+    #thirdDiv {
+        margin-left: 10px;
+    }
+
+
+    #bookingSection #inputSection button {
+        margin-top: 4%;
+        margin-left: 40px;
+        width: 30%;
+    }
+
+    /* 
+#bookingSection  #inputSection
+{
+margin-right: 200px;
+
+} */
+
+
+    #bookingSection #inputSection #contactSection {
+        margin-left: 540px;
+    }
+
+    #bookingSection #inputSection #contactSection .art {
+        font-size: small;
+        padding: 2px;
+        width: 70%;
+        text-align: start;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-top: 70px;
+    }
+
+    #bookingSection #inputSection #contactSection .artlast iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    #bookingSection #inputSection #contactSection .art p {
+        font-size: small;
+    }
+
+    #bookingSection #inputSection #contactSection .art h1 {
+        font-size: 16px;
+        margin-top: 6px;
+        margin-right: 5px;
+    }
+
+
+    #bookingSection #inputSection h2 {
+        margin-top: -5%;
+        margin-left: 50%;
+
+        width: 30%;
+        font-size: medium;
+    }
+
+    #bookingSection #inputSection #firstDiv article input {
+        padding: 2px;
+        width: 55%;
+    }
+
+    #bookingSection #inputSection #firstDiv article label {
+        font-size: medium;
+    }
+
+
+    #bookingSection #inputSection #secoundDiv article input {
+        padding: 2px;
+        width: 55%;
+    }
+
+    #bookingSection #inputSection #secoundDiv article label {
+        font-size: medium;
+    }
+
+
+
+
+    #bookingSection #inputSection #thirdDiv article label {
+        font-size: medium;
+    }
+
+    #footerSection #firstSect {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #bookingSection {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+
+    #bookingSection #inputSection {
+        margin: 0px auto;
+    }
+
+
+}
+
+
+@media (max-width: 1139px) {
+    #bookingSection #inputSection #contactSection .art h1 {
+        font-size: 16px;
+    }
+
+    #bookingSection #inputSection #contactSection .art p {
+        font-size: 9px;
+    }
+
+
+}
+
+
+@media (max-width: 839px) {
+
+    #bookingSection #inputSection #contactSection .art p {
+        font-size: 7px;
+    }
+
+    #bookingSection #inputSection #contactSection .art h1 {
+        margin-right: 20px;
+        font-size: 13px;
+    }
+
+
+}
+
+
+@media (max-width: 758px) {
+
+    #bookingSection #inputSection #contactSection .art,
+    #bookingSection #inputSection #contactSection .artlast {
+        visibility: hidden;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+
+
+    #bookingSection #inputSection #contactSection .art h1 {
+        font-size: 9px;
+    }
+
+
+    /* headerSection */
+
+
+    #headerSection {
+        display: flex;
+        align-items: center;
+        /* height: auto; */
+
+        /* justify-content: center; */
+    }
+
+    #headerSection #imgSection img {
+        width: 140px;
+        height: auto;
+    }
+
+    #headerSection #btnSection a button {
+        padding: 8px 26px;
+        font-size: 7px;
+        margin-right: 70px;
+        margin-left: 20px;
+    }
+
+    /* Home Section  */
+
+
+
+    #homeSection img {
+        width: 100% !important;
+
+    }
+
+    #homeSection .contentSection .four button {
+
+        margin-top: -80px;
+
+    }
+
+
+
+
+
+    /* Our Gallery */
+    aside>h1 {
+        font-size: 29px;
+    }
+
+    /* AboutSection */
+
+    #aboutSection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+    }
+
+    #aboutSection #imgSection #cardArticle {
+        margin-left: -120px;
+        height: 109px;
+        padding: 4px;
+    }
+
+    #aboutSection #imgSection #cardArticle div * {
+        font-size: xx-small;
+    }
+
+    #aboutSection #imgSection #cardArticle div h3 {
+        font-size: 8px;
+    }
+
+    /* Crafting service */
+
+    #mainService #contentSection h1 {
+        font-size: 17px;
+    }
+
+    #mainService #contentSection p {
+        font-size: 7px;
+    }
+
+    #mainService #cardSection {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #mainService #cardSection {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #mainService #cardSection div {
+        width: 40%;
+        height: auto;
+    }
+
+
+
+    #mainService #cardSection div p {
+
+        font-size: 10px;
+
+    }
+
+
+    #mainService #cardSection div button {
+        margin-bottom: 10px;
+        font-size: 10px;
+    }
+
+    #mainService #cardSection div * {
+        margin-right: 15px;
+    }
+
+
+    /* CryingSection */
+
+
+    #cryingSection #ContSection #contArticle h1 {
+        font-size: 10px;
+        padding: 15px
+    }
+
+
+    /* Tame section */
+
+
+    #teamSection #teamCard {
+
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+
+
+    }
+
+    #teamSection #teamCard div {
+
+        width: 45%;
+        height: auto;
+        padding: 9px;
+    }
+
+    #teamSection #teamCard div h2 {
+        font-size: 15px;
+    }
+
+    #teamSection #teamCard div p {
+        font-size: 12px;
+        margin-top: -7px;
+        margin-bottom: 18px;
+    }
+
+}
+
+
+
+@media (max-width: 670px) {
+    #headerSection #navLinks li a {
+        font-size: 12px;
+    }
+
+    #headerSection #navLinks {
+        width: 130px !important;
+        padding: 2px;
+        position: absolute;
+    }
+
+}
+
+@media (max-width: 593px) {
+    #headerSection #navLinks li a {
+        font-size: 8px;
+    }
+
+
+
+
+    #headerSection #navLinks {
+        position: absolute;
+        z-index: 9999;
+        max-width: 80px !important;
+        padding: 2px;
+        /* top:-99px;
+         left: 20px; */
+    }
+}
+
+/* Booking Section Container */
+/* ===== MOBILE FIRST ===== */
+
+
+/* ===== MOBILE RESPONSIVE FIX ===== */
+@media (max-width: 480px) {
+
+    /* Header Section */
+
+    #headerSection #imgSection img {
+        width: 110px;
+        height: auto;
+    }
+
+    #bookingSection #inputSection {
+        margin-top: 40px !important;
+        height: 460px !important;
+    }
+
+    #bookingSection #inputSection h2 {
+        display: none;
+    }
+
+
+    /* Section full fit */
+    #bookingSection,
+    #bookingSection #inputSection {
+        width: 100%;
+        padding: 10px;
+        margin: 0;
+    }
+
+    /* Headings */
+    #bookingSection h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #bookingSection p {
+        font-size: 14px;
+        text-align: center;
+    }
+
+
+
+
+    /* Divs stack */
+    #firstDiv,
+    #secoundDiv,
+    #thirdDiv {
+        width: 100%;
+        margin: 10px 0;
+        display: block;
+    }
+
+    /* Inputs full width */
+    #bookingSection input {
+        width: 100%;
+        padding: 10px;
+    }
+
+    /* Button full width */
+    #bookingSection button {
+
+        display: none;
+    }
+
+    /* Contact section */
+    #bookingSection #contactSection {
+        display: block;
+        margin: 20px 0;
+    }
+
+    /* Contact boxes */
+    #bookingSection #contactSection .art {
+        display: none;
+    }
+
+    /* iframe fix */
+    #bookingSection iframe {
+
+        display: none;
+    }
+
+
+    /* fqasMain */
+    #fqasMain #fqasSection .cards #faqs {
+
+        width: 90% !important;
+
+    }
+
+
+
+    #h1Unique {
+        font-size: 17px !important;
+    }
+
+
+    #cryingSection #ContSection #contArticle h1 {
+        font-size: 7px !important;
+    }
+
+    #bookingSection #inputSection {
+        height: 500px !important;
+    }
+
+    #bookingSection #inputSection #reservationForm #fourdDiv input {
+        width: fit-content;
+        margin-left: 40px;
+        outline: none;
+        border: none;
+        border-radius: 12px;
+    }
+
+    #bookingSection #inputSection #reservationForm #fourdDiv input:hover {
+        background-color: wheat;
+    }
+
+
+    #aboutSection #contentSection button {
+
+
+        padding: 5px 10px;
+
+    }
+
+
+}
+
+@media (max-width: 499px) {
+    #bookingSection #inputSection #reservationForm #secoundDiv article:nth-of-type(2) {
+        margin-left: -30px !important;
+    }
+
+}
+
+
+@media (max-width: 483px) {
+    #bookingSection #inputSection #reservationForm #secoundDiv article:nth-of-type(2) {
+        margin-left: -10px !important;
+    }
+
+
+    #bookingSection #inputSection #reservationForm #thirdDiv label {
+        font-size: 12px;
+    }
+
+    #footerSection #sect2 h3 {
+        font-size: 15px;
+    }
+
+}
+
+@media (max-width: 435px) {
+    #bookingSection #inputSection #reservationForm #secoundDiv article:nth-of-type(2) {
+        margin-left: -35px !important;
+    }
+
+}
+
+@media (max-width: 395px) {
+
+    #bookingSection #inputSection #reservationForm #secoundDiv article:nth-of-type(2) input,
+    #bookingSection #inputSection #reservationForm #secoundDiv article:nth-of-type(2) label {
+        margin-left: 75px !important;
+
+    }
+
+    #bookingSection #inputSection #reservationForm #secoundDiv article:nth-of-type(2) input {
+        width: 40%;
+
+    }
+
+    #bookingSection #inputSection #reservationForm #thirdDiv textarea {
+        height: 42px;
+
+    }
+
+    #footerSection #sect2 h3 {
+        font-size: 10px;
+    }
+
+
+    #aboutSection #contentSection button a {
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width: 335px) {
+
+
+    #bookingSection #inputSection #reservationForm #secoundDiv article:nth-of-type(2) input {
+        width: 30%;
+
+    }
+
+    #bookingSection #inputSection #reservationForm #secoundDiv article:nth-of-type(2) label {
+        font-size: 15px;
+    }
+
+    #bookingSection #inputSection #reservationForm #secoundDiv article:nth-of-type(2) input,
+    #bookingSection #inputSection #reservationForm #secoundDiv article:nth-of-type(2) label {
+        margin-left: 65px !important;
+
+    }
+
+}
+
+@media (max-width: 335px) {
+    /* #bookingSection #inputSection #reservationForm #secoundDiv article:nth-of-type(2) 
+    {
+margin-left: -85px !important;
+    }  */
+
+}
+
+
+
+
+@media (max-width: 781px) {
+    #bookingSection #inputSection>h2 {
+        margin-top: -50px;
+    }
+}
+
+
+@media (max-width: 590px) {
+    #bookingSection #inputSection>h2 {
+        margin-top: -70px;
+    }
+}
+
+@media (min-width: 481px) {
+    #bookingSection #inputSection #reservationForm #fourdDiv input {
+        display: none;
+    }
+
+}
+
+@media (max-width:670px) {
+
+    #headerSection {
+
+        gap: 7% !important;
+    }
+}
+
+
+@media (max-width:493px) {
+
+    #mainService #cardSection div button {
+        padding: 5px 10px;
+    }
+
+    #mainService #cardSection div button a {
+        font-size: 7px;
+    }
+
+
+}
+
+@media (max-width:330px) {
+
+    #headerSection {
+
+        gap: 20px !important;
+    }
+}
+
+@media (max-width:319px) {
+
+    #bookingSection #inputSection #reservationForm #secoundDiv article:nth-of-type(2) input,
+    #bookingSection #inputSection #reservationForm #secoundDiv article:nth-of-type(2) label {
+        margin-left: 55px !important;
+
+    }
+}
+
+html body {
+    /* Already hai */
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* -------------------- Fix for Fixed Header -------------------- */
+#homeSection,
+#gallerySection,
+#aboutSection,
+#mainService,
+#ratingSection,
+#cryingSection,
+#teamSection,
+#bookingSection,
+#fqasMain,
+#footerSection {
+    margin-top: 100px;
+    /* header ki height ke barabar */
+}
+
+html {
+
+    scroll-padding-top: 80px;
+}
+
+
+/*-------------------Fade Section------------------- */
+
+
+.fade-section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.5s linear;
+}
+
+.fade-section.show {
+    opacity: 1;
+    transform: translateY(0);
+}

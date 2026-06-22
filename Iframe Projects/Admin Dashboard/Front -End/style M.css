@@ -1,0 +1,227 @@
+/* Scroll bar */
+
+
+body::-webkit-scrollbar {
+    width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+    background: transparent !important;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: rgba(114, 116, 115, 0.8);
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+    background: rgb(138, 139, 139);
+
+}
+
+
+body,
+html {
+    background-color: #0f0f0f;
+    padding: 0%;
+    overflow: auto;
+    /* overflow-y: auto; */
+    margin: 0%;
+}
+
+body {
+    position: relative;
+}
+
+main #firstDiv img {
+
+    width: 60%;
+    margin-bottom: -50px;
+    height: auto;
+
+}
+
+main #firstDiv {
+    display: flex;
+    justify-content: center;
+}
+
+
+main #secoundDiv {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main #secoundDiv div i {
+    color: yellow;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 30px;
+}
+
+main #secoundDiv div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+main #secoundDiv div h2 {
+    color: white;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+main #secoundDiv div ul li {
+    cursor: pointer;
+    color: rgb(165, 160, 160);
+}
+
+main #secoundDiv div p {
+    cursor: pointer;
+    color: rgb(165, 160, 160);
+}
+
+main #secoundDiv div a {
+    display: flex;
+    align-items: center;
+    color: rgb(170, 170, 170);
+    text-decoration: none;
+}
+
+main #secoundDiv div a:hover {
+    color: wheat;
+}
+
+body>button {
+    padding: 12px 22px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(219, 180, 5);
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+
+body>button a {
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: medium;
+}
+
+body>button:hover {
+    background-color: rgb(97, 83, 4);
+}
+
+
+/* Footer Section */
+
+footer p {
+    color: grey;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* Media query  */
+
+/* Tablet view */
+
+@media (min-width:769px) and (max-width:1024px) {
+    #mainMian {
+        margin-top: 100px;
+    }
+
+    body>button {
+        padding: 8px 18px;
+        border-radius: 10px;
+        border: none;
+        background-color: rgb(219, 180, 5);
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    main #secoundDiv div ul li {
+        cursor: pointer;
+        color: rgb(165, 160, 160);
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+
+    main #secoundDiv div p,
+    main #secoundDiv div a,
+    main #secoundDiv div a i {
+        font-size: 10px;
+        line-height: 15px;
+
+    }
+
+}
+
+
+@media (max-width:768px) {
+    main #secoundDiv {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        /* justify-content: space-evenly; ❌ hata do */
+    }
+
+    #mainMian {
+        margin-top: 150px;
+    }
+
+    body>button {
+        padding: 6px 16px;
+        border-radius: 10px;
+        border: none;
+        background-color: rgb(219, 180, 5);
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+
+    main #secoundDiv div ul li {
+        cursor: pointer;
+        color: rgb(165, 160, 160);
+        font-size: 7px;
+        line-height: 15px;
+    }
+
+    main #secoundDiv div {
+        margin-top: 40px;
+    }
+
+    main #secoundDiv div:nth-child(3) {
+        grid-column: 1 / 3;
+        justify-self: center;
+    }
+
+    main #secoundDiv div:nth-child(1) {
+        margin-top: 65px;
+    }
+
+
+    main #secoundDiv div h2 {
+        font-size: 15px;
+    }
+
+    main #secoundDiv div i {
+        font-size: 18px;
+    }
+
+
+    main #secoundDiv div p,
+    main #secoundDiv div a,
+    main #secoundDiv div a i {
+        font-size: 10px;
+        line-height: 15px;
+
+    }
+
+}

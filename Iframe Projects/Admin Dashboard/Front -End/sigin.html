@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Sigin In</title>
+    <link rel="stylesheet" href="sigin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="fade.css">
+    <link rel="icon" href="Top logo.png" type="image/png">
+</head>
+
+<body>
+
+
+
+    <button>
+        <a class="fade-sectionplz" href="index.html"> Go to home</a>
+    </button>
+
+    <main>
+        <img class="fade-sectionplz" src="Glossy Ak logo with gradient swoosh.png" alt="image">
+
+        <h1 class="fade-sectionplz">Welcome Back</h1>
+        <p class="fade-sectionplz">Don’t have an account yet? <b> <a
+                    style="color: rgb(16, 255, 16); text-decoration: none;" href="sigin up.html">Register here</a></b>
+        </p>
+
+        <form id="siinform" action="https://www.w3schools.com/action_page.php" method="post">
+            <label class="fade-sectionplz" for="email">Email &nbsp;<b style="color: rgb(43, 255, 0);">*</b></label>
+            <input class="fade-sectionplz" autocomplete="off" type="email" name="email" id="email"
+                placeholder="Enter your mail......">
+            <label class="fade-sectionplz" for="password">Password</label>
+
+
+            <div class="password-box fade-sectionplz">
+                <input class="fade-sectionplz" type="password" id="password" name="password" autocomplete="off"
+                    placeholder="Enter password">
+                <span class="fade-sectionplz" id="eye" onclick="togglePassword()">👁️</span>
+            </div>
+
+            <div id="forgetPass">
+                <label>
+                    <input class="fade-sectionplz" type="checkbox" id="rememberMe">
+                    <span class="fade-sectionplz">Remember me</span>
+                </label>
+
+                <h3 class="fade-sectionplz"><a href="verify.html">❌ Forget password </a></h3>
+
+            </div>
+
+            <button class="fade-sectionplz" style="cursor: pointer;" type="submit" onclick="checkForm()">Sigin
+                In</button>
+            <button class="fade-sectionplz" style="cursor: pointer;" type="reset">Reset</button>
+            <p>Sigin with your social networks. 🌐</p>
+
+            <div id="btnSection">
+                <button class="fade-sectionplz"><a href="#"> <i class="fa-brands fa-google"></i> Continue With <br>
+                        google</a></button>
+                <button class="fade-sectionplz"><a href="#"><i class="fa-brands fa-facebook"></i> Continue With <br>
+                        facebook</a></button>
+            </div>
+        </form>
+
+        <p>© All rights reserved. Website <b style="color: rgb(4, 177, 4);"> designed</b> and <b
+                style="color: rgb(38, 214, 15);">developed</b> by Abdullah Khan.</p>
+
+    </main>
+
+
+
+    <script src="script.js"></script>
+    <script src="scriptfade.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Car Animation</title>
+
+<style>
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* SCENE */
+.scene {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    background: skyblue;
+}
+
+/* BUILDINGS BACKGROUND */
+.buildings {
+    position: absolute;
+    bottom: 60px;
+    width: 200%;
+    height: 160px;
+    background: repeating-linear-gradient(
+        to right,
+        #555 0px,
+        #555 60px,
+        #777 60px,
+        #777 120px
+    );
+    animation: moveBg 1s linear infinite;
+}
+
+/* ROAD */
+.road {
+    position: absolute;
+    bottom: 0;
+    width: 200%;
+    height: 60px;
+    background: #333;
+    animation: moveBg 1s linear infinite;
+}
+
+/* CAR */
+.car {
+    position: absolute;
+    bottom: 20px;
+    left: 50px;
+    width: 120px;
+    height: 50px;
+    background: red;
+    border-radius: 10px;
+}
+
+/* CAR WINDOWS */
+.car::before {
+    content: "";
+    position: absolute;
+    top: -20px;
+    left: 25px;
+    width: 70px;
+    height: 20px;
+    background: black;
+    border-radius: 5px;
+}
+
+/* WHEELS */
+.wheel {
+    position: absolute;
+    bottom: -10px;
+    width: 25px;
+    height: 25px;
+    background: black;
+    border-radius: 50%;
+    animation: rotate 0.5s linear infinite;
+}
+
+.wheel.left {
+    left: 15px;
+}
+
+.wheel.right {
+    right: 15px;
+}
+
+/* ANIMATIONS */
+@keyframes moveBg {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="scene">
+    <div class="buildings"></div>
+    <div class="road"></div>
+
+    <div class="car">
+        <div class="wheel left"></div>
+        <div class="wheel right"></div>
+    </div>
+</div>
+
+<script>
+// JavaScript yahan optional hai (future speed control ke liye)
+console.log("Car animation running 🚗");
+</script>
+
+</body>
+</html>

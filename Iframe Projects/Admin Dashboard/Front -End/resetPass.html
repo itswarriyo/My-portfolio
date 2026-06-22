@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+    <link rel="stylesheet" href="sigin.css">
+    <link rel="icon" href="Top logo.png" type="image/png">
+    <link rel="stylesheet" href="fade.css">
+</head>
+
+<body>
+    <main id="reesetPass">
+        <img class="fade-sectionplz" src="Glossy Ak logo with gradient swoosh.png" alt="image">
+
+
+        <h1 class="fade-sectionplz">
+            Set new password
+        </h1>
+        <p class="fade-sectionplz">No worries, we will send you reset instruction.</p>
+
+        <form class="fade-sectionplz" id="formReset" method="post">
+            <label class="fade-sectionplz" for="Opass">Enter old password</label>
+            <input class="fade-sectionplz" type="password" id="Opass" name="password"
+                placeholder="Enter old password...">
+            <label class="fade-sectionplz" for="Npass">Create New password</label>
+            <div class="password-box">
+
+
+                <input class="fade-sectionplz" type="password" id="Npass" name="password"
+                    placeholder="Create New password...">
+                <span class="fade-sectionplz" id="eyesR" onclick="togglePasswordR()">👁️</span>
+            </div>
+
+            <button style="cursor: pointer;" class="fade-sectionplz" onclick="resetPass()">Reset password</button>
+
+            <center> <a style="cursor: pointer;" class="fade-sectionplz" href="index.html">Back to home</a>
+            </center>
+
+        </form>
+
+
+        <p style="margin-top: -13px; margin-bottom: 200px;">© All rights reserved. Website <b
+                style="color: rgb(4, 177, 4);"> designed</b> and
+            <b style="color: rgb(38, 214, 15);">developed</b> by Abdullah Khan.
+        </p>
+    </main>
+
+    <script src="script.js" defer></script>
+    <script src="scriptfade.js"></script>
+</body>
+
+</html>

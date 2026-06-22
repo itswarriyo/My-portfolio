@@ -1,0 +1,860 @@
+@media (max-width: 1848px) {
+    #headerSection nav ul:nth-of-type(3) {
+        margin-top: 15px;
+    }
+
+}
+
+
+
+
+@media (max-width: 1448px) {
+    #servicesSection #ServicesSArticle #expertivArt {
+
+        margin-top: 30px;
+    }
+
+
+}
+
+@media (max-width: 1348px) {
+    /* CSS rules yahan */
+
+    #headerSection nav {
+        gap: 3%;
+    }
+
+    #mainSection #imgSection img {
+        margin-top: 30px;
+    }
+
+    #projectsSection article:nth-of-type(2) div iframe {
+        width: 420px;
+        height: 350px;
+    }
+
+}
+
+@media (max-width: 1300px) {
+
+    #projectsSection article:nth-of-type(2) div iframe {
+        width: 460px;
+        height: 350px;
+    }
+
+
+    #projectsSectionBasics article:nth-of-type(2) {
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+
+    #projectsSectionBasics article:nth-of-type(2) div iframe {
+        width: 290%;
+        height: 600px;
+    }
+}
+
+@media (max-width: 1258px) {
+    #mainSection #main2 div button a {
+        font-size: 12px;
+    }
+
+    #mainSection #main2 div button:nth-of-type(2) {
+        margin-left: -15px;
+    }
+
+    #servicesSection #ServicesSArticle #expertivArt .mainDiv {
+        width: 400px;
+    }
+
+}
+
+@media (max-width: 1218px) {
+    #headerSection nav ul:nth-of-type(2) {
+        margin-left: -20px;
+    }
+}
+
+@media (max-width: 1148px) {
+    /* CSS rules yahan */
+
+    #headerSection nav {
+        gap: 1%;
+    }
+
+    #headerSection nav ul:nth-of-type(1) {
+        margin-left: -20px;
+    }
+
+    #headerSection nav ul:nth-of-type(2) {
+        margin-left: -20px;
+    }
+
+    #mainSection #main2 div {
+        margin: 0 auto;
+    }
+
+    #mainSection #main2 div button a {
+        font-size: 12px;
+    }
+
+    #mainSection #main2 div button:nth-of-type(1) {
+        margin-left: -2px;
+    }
+
+
+    #servicesSection #ServicesSArticle #expertivArt .mainDiv {
+        width: 300px;
+    }
+
+
+}
+
+
+@media (max-width: 1032px) {
+    /* CSS rules yahan */
+
+
+
+    #headerSection nav ul:nth-of-type(2) li a {
+        padding: 4px 7px;
+    }
+
+    #headerSection nav ul:nth-of-type(3) {
+        margin-top: 20px;
+    }
+
+    #mainSection {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    #mainSection #imgSection {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #mainSection #imgSection img {
+        width: 66%;
+    }
+
+
+
+
+
+    #mainSection #main2 div {
+        margin-left: 30px;
+    }
+
+    #mainSection #main2 div div:nth-of-type(2) {
+        margin-left: -50px;
+    }
+
+
+    #projectsSection article:nth-of-type(2) div iframe {
+        width: 400px;
+        height: 350px;
+    }
+
+    #projectsSectionBasics article:nth-of-type(2) {
+
+        justify-content: center;
+        align-items: center;
+    }
+
+    #projectsSectionBasics article:nth-of-type(2) div iframe {
+        width: 200%;
+        height: 600px;
+    }
+
+    #aboutSection #about .about-container #imgCont {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+
+    #contactSection {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #contactSection article:nth-of-type(2) {
+        margin-top: -80px;
+    }
+
+}
+
+
+
+
+@media (min-width: 900px) {
+    #headerSection nav #navBar {
+        display: none;
+    }
+}
+
+
+@media (max-width: 900px) {
+    #headerSection nav ul:nth-of-type(2) {
+        display: none;
+    }
+
+    #headerSection nav ul:nth-of-type(2) li {
+        margin-bottom: -50px !important;
+        margin-right: 30px;
+    }
+
+
+    #headerSection nav ul:nth-of-type(2).show-Nav {
+        display: flex;
+        flex-direction: column !important;
+        gap: 10px;
+        align-items: end;
+        position: fixed;
+        z-index: 999999;
+        background-color: rgba(0, 0, 0, 0.795);
+        width: 100%;
+        padding: 400px;
+        padding: 100px;
+        height: 100vh;
+        justify-content: flex-start;
+        gap: 70px;
+        top: -20px;
+        /* background-color: white; */
+    }
+
+
+
+    #headerSection nav #navBar {
+        color: aliceblue;
+        margin-bottom: 20px;
+        transition: 0.3s ease-in;
+        background-color: rgb(0, 63, 156);
+        padding: 8px 10px;
+        border-radius: 10px;
+    }
+
+    #headerSection nav #navBar:hover {
+        padding: 8px 10px;
+        border-radius: 10px;
+        background-color: rgba(3, 47, 114, 0.8);
+
+    }
+
+
+
+    #headerSection nav {
+        gap: 5%;
+    }
+
+
+
+    #projectsSection article:nth-of-type(2) div iframe {
+        width: 330px;
+        height: 330px;
+    }
+
+}
+
+
+@media (max-width:900px) {
+    #headerSection nav ul:nth-of-type(2).show-Nav li a {
+        padding: 3px 8px;
+        background-color: rgb(98, 152, 179);
+    }
+
+    #servicesSection #ServicesSArticle>.mainDiv {
+        margin: 40px;
+        text-align: center;
+    }
+
+    #servicesSection #ServicesSArticle>.mainDiv span i,
+    #servicesSection #ServicesSArticle>.mainDiv span b {
+        font-size: 22px;
+    }
+
+}
+
+@media (max-width:600px) {
+    #mainSection #imgSection {
+
+        width: 99%;
+        max-height: 130%;
+    }
+
+}
+
+
+@media (max-width:750px) {
+
+
+    #mainSection #main2 div {
+        margin-left: 30px;
+        margin-top: 10px;
+    }
+
+    #mainSection #main2 div div:nth-of-type(2) span * {
+        font-size: 14px;
+    }
+
+    #mainSection #main2 div div:nth-of-type(1) button a {
+        font-size: 10px;
+    }
+
+    #mainSection #main2 div div:nth-of-type(1) button {
+        padding: 5px 9px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+
+    #projectsSection article:nth-of-type(1) h1,
+    #projectsSectionBasics article:nth-of-type(1) h1 {
+        font-size: 17px !important;
+        /* color: white; */
+    }
+
+    #projectsSection article:nth-of-type(1) p,
+    #projectsSectionBasics article:nth-of-type(1) p {
+        font-size: 9px;
+        text-align: center;
+    }
+
+    #projectsSection article:nth-of-type(2) {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    #projectsSection article:nth-of-type(2) div iframe {
+        width: 480px;
+        height: 390px;
+    }
+
+    #projectsSectionBasics article:nth-of-type(2) div a h2 {
+        margin-left: 50px;
+    }
+
+
+    #projectsSectionBasics article:nth-of-type(2) div iframe {
+        width: 150%;
+        height: 600px;
+        margin-left: 50px;
+    }
+
+
+    #aboutSection #about {
+        background: transparent;
+    }
+
+
+    #aboutSection {
+        margin-top: -100px;
+    }
+
+
+}
+
+@media (max-width:680px) {
+    #fqsSection {
+        margin-top: -130px;
+    }
+
+    #footerSection p {
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width:633px) {
+    #fqsSection {
+        margin-top: -320px;
+    }
+
+    #slectServices {
+        margin-bottom: 10px;
+    }
+}
+
+
+
+@media (max-width:616px) {
+    #fqsSection {
+        margin-top: -420px;
+    }
+
+    #contactSection article:nth-of-type(1) #myForm>div {
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+    }
+
+    #contactSection article:nth-of-type(1) #myForm>div div input,
+    #contactSection article:nth-of-type(1) #myForm>div div select {
+        width: 70%;
+    }
+}
+
+
+
+@media (max-width:593px) {
+    #fqsSection {
+        margin-top: -520px;
+    }
+}
+
+
+
+@media (max-width:573px) {
+    #fqsSection {
+        margin-top: -730px;
+    }
+
+    #fqsSection #faqSection .faqTitle {
+        font-size: 28px;
+
+    }
+}
+
+
+@media (max-width:553px) {
+    #fqsSection {
+        margin-top: -870px;
+    }
+}
+
+
+@media (max-width:540px) {
+    #fqsSection {
+        margin-top: -999px;
+    }
+}
+
+@media (max-width:533px) {
+    #fqsSection {
+        margin-top: -1134px;
+    }
+}
+
+@media (max-width:528px) {
+    #fqsSection {
+        margin-top: -1220px;
+    }
+}
+
+@media (max-width:550px) {
+    #mainSection #imgSection img {
+
+        margin-left: -10%;
+    }
+
+
+    #mainSection #main2>div {
+        display: flex;
+        flex-direction: column;
+        margin-left: 60px;
+
+    }
+
+    #mainSection #main2 div div:nth-of-type(2) {
+        margin-left: 25px;
+
+    }
+
+    #servicesSection #ServicesSArticle #expertivArt .mainDiv {
+        width: 260px;
+    }
+
+
+}
+
+@media (max-width:600px) {
+
+    #projectsSection article:nth-of-type(2) div iframe {
+        width: 400px;
+        height: 490px;
+    }
+
+
+
+    #projectsSectionBasics article:nth-of-type(2) div iframe {
+        width: 100%;
+        height: 600px;
+    }
+
+
+
+
+
+}
+
+
+@media (max-width:500px) {
+
+
+    #headerSection nav ul:nth-of-type(3) li:nth-of-type(2) {
+        padding: 7px;
+        font-size: 10px;
+    }
+
+    #headerSection nav ul:nth-of-type(3) li:nth-of-type(1) a {
+        font-size: 12px;
+    }
+
+    #headerSection nav ul:nth-of-type(3) {
+        margin-left: -20px;
+    }
+
+    #mainSection #contentSection h1 {
+        font-size: 23px;
+    }
+
+    #mainSection #contentSection h1 b {
+        font-size: 33px;
+    }
+
+    #mainSection #contentSection h2 {
+        font-size: 18px;
+    }
+
+    #mainSection #contentSection p {
+        font-size: 10px;
+        margin-right: 190px;
+    }
+
+    #mainSection #contentSection {
+        width: 99% !important;
+        margin-left: -2% !important;
+    }
+
+
+    #mainSection #main2>div {
+
+        margin-left: 10px;
+    }
+
+    #servicesSection #ServicesSArticle #expertivArt .mainDiv p {
+        font-size: 8px;
+    }
+
+    #servicesSection #ServicesSArticle #expertivArt .mainDiv {
+        width: 200px;
+    }
+
+    #servicesSection #ServicesSArticle #expertivArt .mainDiv h2,
+    #servicesSection #ServicesSArticle #expertivArt .mainDiv h2 i {
+        font-size: 12px;
+    }
+
+
+    #servicesSection #ServicesSArticle #expertivArt .mainDiv h2 b {
+        font-size: 15px;
+    }
+
+
+    #fqsSection #faqSection .faqTitle {
+        font-size: 19px;
+        margin-left: 30px;
+    }
+
+    #footerSection p {
+        font-size: 10px;
+    }
+
+}
+
+@media (max-width:530px) {
+    #mainSection #contentSection {
+        width: 60%;
+        margin-left: 13%;
+    }
+
+    #aboutSection {
+        margin-top: -100px;
+        margin-left: 0px;
+    }
+}
+
+@media (max-width:450px) {
+    #mainSection #imgSection img {
+
+        margin-left: -15%;
+        text-align: center;
+    }
+
+    #servicesSection #contentsArticle h1 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #servicesSection #contentsArticle h1 b {
+        font-size: 27px;
+    }
+
+    #servicesSection #contentsArticle h3 {
+        font-size: 13px;
+    }
+
+
+    #projectsSection article:nth-of-type(2) div iframe {
+        width: 330px;
+        height: 490px;
+    }
+
+    #servicesSection #ServicesSArticle>.mainDiv {
+        margin: 20px;
+        text-align: center;
+    }
+
+    #servicesSection #ServicesSArticle>.mainDiv span i,
+    #servicesSection #ServicesSArticle>.mainDiv span b {
+        font-size: 14px;
+    }
+
+    #aboutSection #about .about-container #imgCont .about-image img {
+        width: 300px;
+    }
+
+    #aboutSection #about .about-container #imgCont .about-image .experience-box,
+    #aboutSection #about .about-container #imgCont .about-image .experience-box2 {
+        padding: 0px 10px;
+    }
+
+    #fqsSection {
+        margin-top: -620px;
+    }
+
+
+    #fqsSection #faqSection .faqTitle {
+        font-size: 16px;
+        margin-left: 60px;
+    }
+
+    #fqsSection #faqSection .faq-container .faq-box h2,
+    #fqsSection #faqSection .faq-container .faq-box p {
+        font-size: 10px;
+        padding: 4px;
+    }
+
+    #aboutSection {
+        margin-top: -140px;
+        margin-left: 30px;
+    }
+
+
+}
+
+@media (max-width:380px) {
+    #headerSection nav ul:nth-of-type(3) li:nth-of-type(2) {
+        padding: 7px;
+        font-size: 8px;
+    }
+
+    #headerSection nav ul:nth-of-type(3) li:nth-of-type(1) a {
+        font-size: 8px;
+    }
+
+    #headerSection nav ul:nth-of-type(3) {
+        margin-left: -25px;
+    }
+
+    #headerSection nav #navBar {
+        font-size: 7px;
+
+    }
+
+    #headerSection nav ul:nth-of-type(1) li img {
+        width: 70px;
+    }
+
+    #headerSection {
+        height: 70px;
+    }
+
+
+    #mainSection #imgSection img {
+        width: 80% !important;
+    }
+
+
+    #mainSection #contentSection {
+        height: 260px;
+    }
+
+    #mainSection #contentSection p {
+        font-size: 11px;
+        margin-right: 140px;
+    }
+
+    #mainSection #contentSection h2 {
+        font-size: 12px;
+    }
+
+    #mainSection #contentSection h1 {
+        font-size: 12px;
+        margin-top: -10px;
+    }
+
+    #mainSection #contentSection h1 b {
+        font-size: 15px;
+    }
+
+    #mainSection #contentSection h4 {
+        font-size: 17px;
+    }
+
+    #servicesSection {
+        padding: 20px 30px 20px 10px;
+        min-width: 210px;
+        min-width: 240px;
+
+    }
+
+    #servicesSection #ServicesSArticle #expertivArt .mainDiv {
+        margin-left: -10px !important;
+        min-width: 200px;
+    }
+
+
+    #servicesSection #ServicesSArticle #expertivArt .mainDiv h2,
+    #servicesSection #ServicesSArticle #expertivArt .mainDiv h2 i {
+        font-size: 8px;
+    }
+
+
+    #servicesSection #ServicesSArticle #expertivArt .mainDiv h2 b {
+        font-size: 10px;
+    }
+
+    #servicesSection #ServicesSArticle #expertivArt .mainDiv p {
+        text-align: start;
+        font-size: 8px;
+    }
+
+    #servicesSection #ServicesSArticle #expertivArt .mainDiv {
+        width: 100px;
+    }
+
+    #servicesSection #ServicesSArticle .mainDiv:nth-of-type(1) div span i {
+        font-size: 23px;
+    }
+
+    #servicesSection #ServicesSArticle .mainDiv:nth-of-type(1) div span b {
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    #projectsSection article:nth-of-type(1) #myPro,
+    #projectsSectionBasics article:nth-of-type(1) #myPro2 {
+        font-size: 10px !important;
+    }
+
+    #projectsSection article:nth-of-type(1) p,
+    #projectsSectionBasics article:nth-of-type(1) p {
+        font-size: 7px;
+    }
+
+
+
+    #projectsSection article:nth-of-type(2) div iframe {
+        width: 280px;
+        height: 490px;
+    }
+
+    #projectsSectionBasics article:nth-of-type(1) p {
+        font-size: 7px;
+    }
+
+    #aboutSection #about .about-container #imgCont .about-image img {
+        width: 250px;
+    }
+
+    #aboutSection #about .about-container #imgCont .about-image .experience-box h2,
+    #aboutSection #about .about-container #imgCont .about-image .experience-box p,
+    #aboutSection #about .about-container #imgCont .about-image .experience-box2 h2,
+    #aboutSection #about .about-container #imgCont .about-image .experience-box2 p {
+        font-size: 12px;
+    }
+
+
+
+    #fqsSection {
+        margin-top: -130px;
+        margin-left: 1%;
+    }
+
+    #fqsSection #faqSection .faq-container .faq-box h2,
+    #fqsSection #faqSection .faq-container .faq-box p {
+        font-size: 8px;
+        padding: 2px;
+    }
+
+    #fqsSection #faqSection .faq-container .faq-box {
+        width: 180px;
+    }
+
+    #contactSection article:nth-of-type(2) {
+        margin-top: -100px;
+    }
+
+    #contactSection article:nth-of-type(2) aside {
+
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+
+
+@media (min-width:356px) {
+
+    #projectsSection article:nth-of-type(1) p,
+    #projectsSectionBasics article:nth-of-type(1) p {
+        text-align: center;
+    }
+
+    #servicesSection {
+        padding: 20px 30px 20px 10px;
+        min-width: 210px;
+        min-width: 150px !important;
+
+    }
+
+
+
+
+}
+
+@media (max-width:356px) {
+    #mainSection #imgSection img {
+        margin-left: -10%;
+    }
+
+
+    #servicesSection {
+        min-width: 180px;
+    }
+
+    #ServicesSArticle #expertivArt .mainDiv {
+        text-align: start;
+        min-width: 160px !important;
+    }
+
+    #servicesSection #ServicesSArticle #expertivArt .mainDiv p {
+        font-size: 9px;
+
+    }
+
+    #aboutSection {
+        margin-left: 0px;
+    }
+
+}

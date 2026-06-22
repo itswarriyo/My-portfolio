@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="Top logo.png" type="image/png">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Bungee+Tint&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Chakma&family=Syncopate:wght@400;700&family=Zalando+Sans+Expanded:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <link rel="stylesheet" href="fade.css">
+  <style>
+    body::-webkit-scrollbar {
+      width: 13px;
+
+    }
+
+    body::-webkit-scrollbar-track {
+      background: transparent !important;
+    }
+
+    body::-webkit-scrollbar-thumb {
+      background: rgba(114, 116, 115, 0.8);
+      border-radius: 0px;
+    }
+
+    body::-webkit-scrollbar-thumb:hover {
+      background: rgb(138, 139, 139);
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <!-- Mian Aside -->
+
+  <aside id="mainUlAside">
+
+    <b id="menueCloser" style="z-index: 999;" onclick="closerAside()">❌</b>
+    <nav>
+      <ul>
+        <li class="fade-sectionplz">
+          <img src="Glossy Ak logo with gradient swoosh.png" alt="image">
+        </li>
+
+        <li class="fade-sectionplz"><a href="index.html"><i class="fa-solid fa-bag-shopping"></i><b> E-Commerce</b></a>
+        </li>
+
+        <li class="fade-sectionplz fade-sectionplzsmall">
+          <i class="fa-regular fa-clipboard"></i>
+          <details>
+            <summary>Pages </summary>
+            <p><a target="_blank" href="maintanece.html"> Maintenance</a></p>
+            <p> <a target="_blank" href="error404.html">404 Error</a> </p>
+          </details>
+
+        </li>
+
+        <li class="fade-sectionplz">
+          <i class="fa-solid fa-lock"></i>
+          <details>
+            <summary id="summary2"> <b style="margin-right: -74px; font-weight: 600;">Authentication</b></summary>
+            <p><a target="_blank" href="sigin.html"> Sigin In</a></p>
+            <p> <a target="_blank" href="sigin up.html">Sigin Up</a> </p>
+            <p><a target="_blank" href="verify.html">Forget password</a></p>
+            <p><a target="_blank" href="resetPass.html">Reset Password</a></p>
+            <p><a target="_blank" href="otpVerification.html">OTP verification</a></p>
+
+          </details>
+        </li>
+        <li class="fade-sectionplz">
+          <i class="fa-solid fa-bars"></i>
+          <details id="level1b">
+            <summary> <b style="margin-right: -39px; font-weight: 600;">Menue bar</b>
+            </summary>
+            <p>level 1A</p>
+            <details id="level2b">
+              <summary id="levelS"><b style="margin-right: -32px;">Level 1B</b> </summary>
+              <p>Level 2A</p>
+              <p>Level 2B</p>
+
+            </details>
+
+          </details>
+        </li>
+
+
+
+        <li class="fade-sectionplz" title="This icon is disable."><i class="fa-solid fa-ban"></i> <del> Disable</del>
+        </li>
+
+        <li class="fade-sectionplz"><i class="fa-solid fa-tag"></i> <span>Lable</span> <span>New</span></li>
+
+        <li class="fade-sectionplz"><i class="fa-solid fa-arrow-up-right-from-square"></i><span> External links</span>
+        </li>
+
+        <li class="fade-sectionplz"><i class="fa-regular fa-file"></i><a target="_blank" href="blank.html">Blank</a>
+        </li>
+        <li class="fade-sectionplz" id="auraLi">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmidudm7moJxlqukyumbRiWyo8X-kxdDUKrw&s"
+            alt="image">
+          <h3>Abdullah khan</h3>
+          <p>Free Version - 1 Month</p>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+  <!-- Esc popup -->
+
+
+  <div class="fade-sectionplz" id="popmain">
+    <button onclick="goBack()" id="escClose">
+      <a href="#">Go back</a>
+    </button>
+
+    <div class="input-wrapper">
+      <input autocomplete="off" type="text" placeholder="Enter Esc ,,,," id="myInput">
+
+      <div class="btn-group">
+        <button onclick="escclick()">Esc</button>
+        <button onclick="clearbtn()">X</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Section -->
+
+  <header id="headerSection">
+    <nav>
+      <a id="directA" onclick="toggleAiSec()"><i class="fa-solid fa-arrows-left-right-to-line"></i></a>
+      <a id="directB" onclick="menueAsideShow()"><i class="fa-solid fa-bars"></i></a>
+      <ul>
+        <li onclick="goBack()" id="disturbA"><i class="fa-solid fa-magnifying-glass"></i> <i
+            class="fa-solid fa-bug"></i> K</li>
+        <li><i class="fa-regular fa-moon"></i></li>
+        <li onclick="showNoti()"><i class="fa-regular fa-bell"></i><sup>5</sup></li>
+        <li onclick="auraClicker()"><img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmidudm7moJxlqukyumbRiWyo8X-kxdDUKrw&s"
+            alt="auraimg"></li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Noti card -->
+
+  <div id="notifi">
+
+    <div class="user-card ">
+      <img src="https://i.pravatar.cc/150?img=1" alt="user">
+      <div class="info">
+        <h4>Ali Khan</h4>
+        <p>ali@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="user-card">
+      <img src="https://i.pravatar.cc/150?img=2" alt="user">
+      <div class="info">
+        <h4>Sara Ahmed</h4>
+        <p>sara@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="user-card">
+      <img src="https://i.pravatar.cc/150?img=3" alt="user">
+      <div class="info">
+        <h4>Usman Tariq</h4>
+        <p>usman@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="user-card">
+      <img src="https://i.pravatar.cc/150?img=4" alt="user">
+      <div class="info">
+        <h4>Hina Shah</h4>
+        <p>hina@gmail.com</p>
+      </div>
+    </div>
+
+    <div class="user-card">
+      <img src="https://i.pravatar.cc/150?img=5" alt="user">
+      <div class="info">
+        <h4>Ahmed Raza</h4>
+        <p>ahmed@gmail.com</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Aura Image Anmi -->
+
+  <div id="auraCard">
+
+    <section>
+      <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmidudm7moJxlqukyumbRiWyo8X-kxdDUKrw&s"
+          alt="Image"></div>
+      <div>
+        <h3>Abdullah khan</h3>
+        <p>musakhon391@gmail.com</p>
+      </div>
+    </section>
+    <ul>
+      <li><a href="#"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="#"><i class="fa-solid fa-inbox"></i> Inbox</a></li>
+      <li><a href="#"><i class="fa-regular fa-comment"></i> Chat</a></li>
+      <li><a href="#"><i class="fa-solid fa-arrow-trend-up"></i> Activity</a></li>
+      <li><a href="#"><i class="fa-solid fa-user-gear"></i> Account setting</a></li>
+      <li><a href="#"><i class="fa-solid fa-arrow-right-to-bracket"></i> Logout</a></li>
+    </ul>
+
+  </div>
+
+  <!-- Start ai sect -->
+  <main id="collaper">
+
+
+    <section id="startAiSect">
+      <div class="fade-sectionplz" id="art1">
+        <h2>👋 Hello </h2>
+        <p>
+          Welcome to your E-commerce Dashboard! Monitor your sales,
+          track your progress, and gain valuable insights.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Assumenda, laborum. Aliquid sit expedita eaque
+          repellat sapiente assumenda ullam ut! Sed officia officiis placeat temporibus fuga similique est laboriosam
+          aspernatur aliquid?
+        </p>
+        <button class="fade-sectionplz"><a target="_blank" href="aichart.html">Start Ai</a></button>
+      </div>
+
+      <div class="fade-sectionplz" id="art2">
+        <div>
+          <h2>Ideas for You</h2>
+          <h1>
+            Create a Blog Post for your products
+          </h1>
+
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem</p>
+          <button><a href="ReadMore.html">Read More</a></button>
+
+          <div onclick="showDiv()" class="btnGt">
+            <span>&lt;</span>
+            <span>&gt;</span>
+          </div>
+
+        </div>
+
+
+        <div id="div2">
+          <h2>Ideas for You</h2>
+          <h1>
+            Create a Vedio promtion for your projects
+          </h1>
+
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem</p>
+          <button><a href="ReadMore.html">Read More</a></button>
+
+          <div onclick="showDiv()" class="btnGt">
+            <span>&lt;</span>
+            <span>&gt;</span>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ORC -->
+    <section id="oRc">
+
+      <div class="fade-sectionplz">
+        <div>
+          <button id="obtn1">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+          <span>Order</span>
+        </div>
+        <div>
+          <span>3,234</span>
+          <span>2.29% <i class="fa-solid fa-arrow-trend-up"></i></span>
+        </div>
+      </div>
+
+      <div class="fade-sectionplz">
+        <div>
+          <button>
+            <span>$</span>
+          </button>
+          <span>Revenue</span>
+        </div>
+        <div>
+          <span>3,234</span>
+          <span>2.29% <i class="fa-solid fa-arrow-trend-up"></i></span>
+        </div>
+      </div>
+
+      <div class="fade-sectionplz">
+        <div>
+          <button>
+            <i class="fa-solid fa-circle-user"></i>
+          </button>
+          <span>Conversion Rate</span>
+        </div>
+        <div>
+          <span>3,234</span>
+          <span>2.29% <i class="fa-solid fa-arrow-trend-down"></i></span>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- Graph -->
+
+
+    <!-- Toatal expanses -->
+    <section class="graphGrid">
+
+      <!-- 💚 REVENUE -->
+      <article class="fade-sectionplz">
+        <div id="topbar-revenue">Revenue</div>
+        <div id="chart-revenue"></div>
+      </article>
+
+      <article class="fade-sectionplz rightPanel">
+        <h3>Days</h3>
+        <ul id="list-revenue"></ul>
+      </article>
+
+      <!-- 💛 EXPENSES -->
+      <article class="fade-sectionplz">
+        <div id="topbar-expense">Expenses</div>
+        <div id="chart-expense"></div>
+      </article>
+
+      <article class="rightPanel fade-sectionplz">
+        <h3>Days</h3>
+        <ul id="list-expense"></ul>
+      </article>
+
+      <!-- 💙 PROFIT -->
+      <article class="fade-sectionplz">
+        <div id="topbar-profit">Profit</div>
+        <div id="chart-profit"></div>
+      </article>
+
+      <article class="rightPanel fade-sectionplz">
+        <h3>Days</h3>
+        <ul id="list-profit"></ul>
+      </article>
+
+    </section>
+
+
+
+    <!--  -->
+
+
+    <!-- Circle  -->
+
+    <h1 class="fade-sectionplz" id="Graphh1">Graph Info </h1>
+
+
+    <div class="progress-container ">
+
+      <div class="progress-box fade-sectionplz">
+        <svg viewBox="0 0 100 100">
+          <circle class="circle-bg" cx="50" cy="50" r="40"></circle>
+          <circle class="circle-progress" id="circleSmartphone" cx="50" cy="50" r="40"></circle>
+          <text x="50" y="55" class="circle-text" id="textSmartphone">0%</text>
+        </svg>
+        <p>Revenue</p>
+      </div>
+
+      <div class="progress-box fade-sectionplz">
+        <svg viewBox="0 0 100 100">
+          <circle class="circle-bg" cx="50" cy="50" r="40"></circle>
+          <circle class="circle-progress" id="circleHandsfree" cx="50" cy="50" r="40"></circle>
+          <text x="50" y="55" class="circle-text" id="textHandsfree">0%</text>
+        </svg>
+        <p>Expenses</p>
+      </div>
+
+      <div class="progress-box fade-sectionplz">
+        <svg viewBox="0 0 100 100">
+          <circle class="circle-bg" cx="50" cy="50" r="40"></circle>
+          <circle class="circle-progress" id="circleAccessories" cx="50" cy="50" r="40"></circle>
+          <text x="50" y="55" class="circle-text" id="textAccessories">0%</text>
+        </svg>
+        <p>Profit</p>
+      </div>
+
+      <div class="progress-box fade-sectionplz">
+        <svg viewBox="0 0 100 100">
+          <circle class="circle-bg" cx="50" cy="50" r="40"></circle>
+          <circle class="circle-progress" id="circleOther" cx="50" cy="50" r="40"></circle>
+          <text x="50" y="55" class="circle-text" id="textOther">0%</text>
+        </svg>
+        <p>Other</p>
+      </div>
+
+    </div>
+
+
+
+    <h1 class="fade-sectionplz" id="producth1">Products order live info</h1>
+
+
+    <div class="container">
+      <!-- Smartphone -->
+      <div class="box fade-sectionplz">
+        <svg viewBox="0 0 100 100">
+          <circle class="bg" cx="50" cy="50" r="40"></circle>
+          <circle class="progress" id="p1" cx="50" cy="50" r="40"></circle>
+          <text x="50" y="55" class="text" id="t1">0%</text>
+        </svg>
+        <p>Smartphone</p>
+      </div>
+
+      <!-- Handsfree -->
+      <div class="box fade-sectionplz">
+        <svg viewBox="0 0 100 100">
+          <circle class="bg" cx="50" cy="50" r="40"></circle>
+          <circle class="progress" id="p2" cx="50" cy="50" r="40"></circle>
+          <text x="50" y="55" class="text" id="t2">0%</text>
+        </svg>
+        <p>Handsfree</p>
+      </div>
+
+      <!-- Accessories -->
+      <div class="box fade-sectionplz">
+        <svg viewBox="0 0 100 100">
+          <circle class="bg" cx="50" cy="50" r="40"></circle>
+          <circle class="progress" id="p3" cx="50" cy="50" r="40"></circle>
+          <text x="50" y="55" class="text" id="t3">0%</text>
+        </svg>
+        <p>Accessories</p>
+      </div>
+
+      <!-- Other Products (NEW) -->
+      <div class="box fade-sectionplz">
+        <svg viewBox="0 0 100 100">
+          <circle class="bg" cx="50" cy="50" r="40"></circle>
+          <circle class="progress" id="p4" cx="50" cy="50" r="40"></circle>
+          <text x="50" y="55" class="text" id="t4">0%</text>
+        </svg>
+        <p>Other Products</p>
+      </div>
+
+
+
+    </div>
+
+
+
+
+    <section id="tabSection">
+
+      <article id="tableSection">
+
+        <table class="fade-sectionplz">
+          <thead>
+            <tr>
+              <th>Order ID</th>
+              <th>Amount</th>
+              <th>Shipping Method</th>
+              <th>Delivery Date</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+
+
+          <tbody>
+            <tr>
+              <td>#DU005</td>
+              <td>$150</td>
+              <td>Standard</td>
+              <td>Jan 20, 2025</td>
+              <td><button>Shipped</button></td>
+              <td><button>View</button></td>
+            </tr>
+          </tbody>
+
+
+          <tbody>
+            <tr>
+              <td>#DU004</td>
+              <td>$120</td>
+              <td>Express</td>
+              <td>Jan 10, 2025</td>
+              <td><button>Pending</button></td>
+              <td><button>View</button></td>
+            </tr>
+          </tbody>
+
+
+          <tbody>
+            <tr>
+              <td>#DU003</td>
+              <td>$110</td>
+              <td>Overnight</td>
+              <td>Feb 1, 2025</td>
+              <td><button>Cancel</button></td>
+              <td><button>View</button></td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr>
+              <td>#DU002</td>
+              <td>$10</td>
+              <td>Overnight</td>
+              <td>Jan 1, 2026</td>
+              <td><button>Completed</button></td>
+              <td><button>View</button></td>
+            </tr>
+          </tbody>
+
+          <tbody>
+            <tr>
+              <td>#DU001</td>
+              <td>$40</td>
+              <td>Overnight</td>
+              <td>Mar 1, 2026</td>
+              <td><button>Completed</button></td>
+              <td><button>View</button></td>
+            </tr>
+          </tbody>
+
+        </table>
+
+      </article>
+
+
+      <article class="fade-sectionplz" id="renvueByLoca">
+
+        <h3>Revneue by location</h3>
+
+        <img src="world.png" alt="image">
+
+
+        <div class="containerr">
+
+          <div class="meter-box">
+            <div class="PakNo">
+              <h3>USA</h3>
+              <h3>$22,92</h3>
+            </div>
+            <meter class="uk" value="75" min="0" max="100"></meter>
+          </div>
+
+          <div class="meter-box">
+            <div class="PakNo">
+              <h3>Indian</h3>
+              <h3>$32,92</h3>
+            </div>
+            <meter class="usa" value="60" min="0" max="100"></meter>
+          </div>
+
+          <div class="meter-box">
+            <div class="PakNo">
+              <h3>Pakistan</h3>
+              <h3>$15,92</h3>
+            </div>
+            <meter class="pk" value="85" min="0" max="100"></meter>
+          </div>
+
+          <div class="meter-box">
+            <div class="PakNo">
+              <h3>Canada</h3>
+              <h3>$62,92</h3>
+            </div>
+            <meter class="can" value="45" min="0" max="100"></meter>
+          </div>
+
+
+          <div class="meter-box">
+            <div class="PakNo">
+              <h3>Afganistan</h3>
+              <h3>$12,92</h3>
+            </div>
+            <meter class="afg" value="25" min="0" max="100"></meter>
+          </div>
+
+          <div class="meter-box">
+            <div class="PakNo">
+              <h3>France</h3>
+              <h3>$92,92</h3>
+            </div>
+            <meter class="fran" value="65" min="0" max="100"></meter>
+          </div>
+
+        </div>
+      </article>
+
+    </section>
+
+
+
+    <!-- Products sale accordding to gender -->
+    <section id="progend">
+
+      <h2 class="fade-sectionplz">Sales by gender</h2>
+
+      <div class="circle-wrapper fade-sectionplz">
+
+        <!-- OUTER -->
+        <svg class="circle-svg" viewBox="0 0 220 220">
+          <circle class="circle-bg" cx="110" cy="110" r="90"></circle>
+          <circle class="circle-progress outer-progress" id="outerCircle" cx="110" cy="110" r="90"></circle>
+        </svg>
+
+        <!-- MIDDLE -->
+        <svg class="circle-svg" viewBox="0 0 220 220">
+          <circle class="circle-bg" cx="110" cy="110" r="70"></circle>
+          <circle class="circle-progress middle-progress" id="middleCircle" cx="110" cy="110" r="70"></circle>
+        </svg>
+
+        <!-- INNER -->
+        <svg class="circle-svg" viewBox="0 0 220 220">
+          <circle class="circle-bg" cx="110" cy="110" r="50"></circle>
+          <circle class="circle-progress inner-progress" id="innerCircle" cx="110" cy="110" r="50"></circle>
+        </svg>
+
+        <div class="center-label">Stats</div>
+
+      </div>
+
+      <div id="mwk" class="fade-sectionplz">
+        <div><span></span>
+          <h3>Men</h3>
+        </div>
+        <div><span></span>
+          <h3>Women</h3>
+        </div>
+        <div><span></span>
+          <h3>Kids</h3>
+        </div>
+      </div>
+
+    </section>
+
+
+    <!-- Top salling products -->
+
+
+    <section style="margin-top: 100px;" id="topSpTable">
+
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">
+              <h3>Product</h3>
+            </th>
+            <th>
+              <h3>Sale</h3>
+            </th>
+            <th>
+              <h3>Renuve</h3>
+            </th>
+            <th>
+              <h3>Ratting</h3>
+            </th>
+            <th>
+              <h3>Status</h3>
+            </th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td class="imgsectro" colspan="2"><img
+                src="https://themewagon.github.io/dasher/assets/images/ecommerce/product-1.jpg" alt="iamge">
+              <span>Transperent Glasses</span>
+            </td>
+            <td></td>
+            <td>987</td>
+            <td>$2,902</td>
+            <td>⭐⭐⭐⭐⭐ 5/5</td>
+            <td><span>In stock</span></td>
+          </tr>
+
+          <tr>
+            <td class="imgsectro" colspan="2"><img
+                src="https://themewagon.github.io/dasher/assets/images/ecommerce/product-2.jpg" alt="iamge"> <span>Frame
+                Still Life Glasses</span> </td>
+            <td></td>
+            <td>287</td>
+            <td>$1,602</td>
+            <td>⭐⭐⭐⭐ 5/4</td>
+            <td><span>Low stoct</span></td>
+          </tr>
+
+          <tr>
+            <td class="imgsectro" colspan="2"><img
+                src="https://themewagon.github.io/dasher/assets/images/ecommerce/product-3.jpg" alt="iamge">
+              <span>Slithly Rounded Frames </span>
+            </td>
+            <td></td>
+            <td>87</td>
+            <td>$602</td>
+            <td>⭐⭐⭐⭐ 5/4</td>
+            <td><span>Low stoct</span></td>
+          </tr>
+
+          <tr>
+            <td class="imgsectro" colspan="2"><img
+                src="https://themewagon.github.io/dasher/assets/images/ecommerce/product-4.jpg" alt="iamge">
+              <span>Colored-Transparent Sunglasses</span>
+            </td>
+            <td></td>
+            <td>287</td>
+            <td>$902</td>
+            <td>⭐⭐⭐ 5/3</td>
+            <td><span> In stoct</span></td>
+          </tr>
+
+
+          <tr>
+            <td class="imgsectro" colspan="2"><img
+                src="https://themewagon.github.io/dasher/assets/images/ecommerce/product-5.jpg" alt="iamge"> <span>Sun
+                Glasses Table</span> </td>
+            <td></td>
+            <td>337</td>
+            <td>$292</td>
+            <td>⭐⭐⭐⭐ 5/4</td>
+            <td><span> In stoct</span></td>
+          </tr>
+
+
+          <tr>
+            <td class="imgsectro" colspan="2"><img
+                src="https://themewagon.github.io/dasher/assets/images/ecommerce/product-6.jpg" alt="iamge">
+              <span>Rounded Frames Glasses</span>
+            </td>
+            <td></td>
+            <td>227</td>
+            <td>$902</td>
+            <td>⭐⭐⭐⭐⭐ 5/5</td>
+            <td><span>Out off Stoct </span></td>
+          </tr>
+
+        </tbody>
+      </table>
+
+    </section>
+
+
+    <footer class="fade-sectionplz">
+      <p>© All rights reserved. Website <b style="color: rgb(4, 177, 4);"> designed</b> and <b
+          style="color: rgb(38, 214, 15);">developed</b> by Abdullah Khan.</p>
+
+    </footer>
+
+    <script src="https://unpkg.com/lightweight-charts@4.1.1/dist/lightweight-charts.standalone.production.js"></script>
+
+  </main>
+
+
+
+
+
+</body>
+<script src="https://unpkg.com/lightweight-charts@4.1.1/dist/lightweight-charts.standalone.production.js"></script>
+<script src="script.js"> </script>
+<script src="script2.js"></script>
+<script src="scriptfade.js"></script>
+
+</html>
