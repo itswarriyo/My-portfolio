@@ -162,3 +162,35 @@ formenquery.addEventListener("submit", function (e) {
     return true;
 
 });
+
+
+// Svg Fornt End loader-----------------------
+
+
+let progress = 0;
+
+let bar = document.getElementById("progressBar");
+let percent = document.getElementById("percent");
+
+let interval = setInterval(() => {
+
+    progress++;
+
+    bar.style.width = progress + "%";
+    percent.innerText = progress + "%";
+
+    if(progress >= 100){
+
+        clearInterval(interval);
+
+        setTimeout(() => {
+
+            document.getElementById("loader").style.display = "none";
+
+            document.getElementById("web-content").style.display = "block";
+
+        }, 500);
+
+    }
+
+}, 30);
