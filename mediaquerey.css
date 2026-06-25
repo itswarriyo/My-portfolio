@@ -371,6 +371,11 @@
         font-size: 13px;
     }
 
+    .loader-content 
+    {
+        margin-top: -150px;
+    }
+
 }
 
 @media (max-width:633px) {
